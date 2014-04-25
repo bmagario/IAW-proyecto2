@@ -1,0 +1,149 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="worldcup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="groups">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="group" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="matchs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="match" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:dateTime" name="date"/>
+                                <xs:element type="xs:string" name="place"/>
+                                <xs:element type="xs:string" name="team_left"/>
+                                <xs:element type="xs:string" name="team_right"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:byte" name="id" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="playoff">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="octavos1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="match" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="date"/>
+                          <xs:element type="xs:string" name="place"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="octavos2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="match" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="date"/>
+                          <xs:element type="xs:string" name="place"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="cuartos1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="match" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="date"/>
+                          <xs:element type="xs:string" name="place"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="cuartos2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="match" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="date"/>
+                          <xs:element type="xs:string" name="place"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="semi1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="match">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="date"/>
+                          <xs:element type="xs:string" name="place"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="semi2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="match">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="date"/>
+                          <xs:element type="xs:string" name="place"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="final">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="match">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="date"/>
+                          <xs:element type="xs:string" name="place"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

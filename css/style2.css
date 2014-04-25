@@ -1,0 +1,413 @@
+html{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #FFF;
+	background-image: url(../images/cancha2.jpg);
+	padding: 0;
+	margin: 0;
+	font:italic Georgia, serif;
+}
+
+section{
+	width: 80%;
+	min-height: 500px;
+	border: 1px solid #DDD;
+	padding: 2%;
+	margin:0 auto;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+
+
+.footer {
+	padding-top: 30px;
+	position: relative;
+	text-align: center;
+	color: #001;
+	background-color: rgb(92,188,125);
+	margin: 0;
+	height: 80px;
+}
+
+.my-nav{
+	background-color: rgb(92,188,125);
+	background-image: none ;
+	height: 80px;
+	margin: 0;
+	border:3px outset #A4D1FF;
+}
+
+.my-nav .navbar-toggle{
+	border-color: rgb(37,35,48);
+	border:3px outset #A4D1FF;
+}
+.my-navbar > li > a{
+	font-size: 20px;
+	color: #fff;
+	margin-top: 15px;
+}
+
+a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+}
+
+.my-navbar > li > a:hover{
+	font-size: 20px;
+	color: #fff;
+	background-color: #292B24;
+	border-radius: 5px;
+	border-color:#00B3B3;
+}
+
+.my-navbar > li > a.active{
+	font-size: 20px;
+	color: #fff;
+	background-color:#727564;
+	border-radius: 5px;
+	border-color:#00B3B3;
+}
+
+h1{
+	text-align: center;
+}
+
+.country{
+	width: 57px;
+	margin: auto;
+	text-align: center;
+	color: white;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.my-container{
+	background-color: rgba(26,17,57,0.5);
+	width: 94%;
+	height: auto;
+	padding: 0;
+}
+
+.my-container-playoff{
+	background-color: rgba(20,100,50,0.5);
+	width: 94%;
+	height: auto;
+	padding: 0;
+}
+
+.my-container-readme{
+	background-color: rgba(26,17,57,0.5);
+	width: 94%;
+	height: auto;
+	padding: 0;
+}
+.barra
+{
+	background-color: black;
+	width: 92%;
+	height: 2px;
+	padding: 0;
+}
+
+.coat{
+	width:50px; height:60px;
+	z-index: 0;
+}
+
+.coat-zoom{
+	width:50px!important; height:60px!important;
+	z-index: 55!important;
+}
+
+header
+{
+	background-color: green;
+	padding: 0px;
+	margin: 0px;
+}
+
+div#banner
+{
+	width:100%;
+	height:100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+img#imagen_banner
+{
+	margin: auto;
+	width: 100%;
+	height: 350px;
+	padding: 0px;	
+}
+
+.table{
+	width: 100%;
+	border: 3px groove #04BBCA !important;
+	margin-left: 10px;
+	color:#fff;
+}
+
+.table tr>th{
+	color:#DFE0DA;
+	background:rgb(21,43,70) ;
+}
+.table tr>td{
+	background: rgb(25,40,50);
+}
+
+.group-title{
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 22px;
+	color:#fff ;
+}
+
+.widget{
+	margin: 16px;
+	padding: 0;
+	color: white;
+	background:rgba(50,188,100,0.5);
+	text-align: center;
+	border: 1px solid black;
+	font-size: 11px;
+}
+
+.input_goles{
+	width: 50px;
+	height: 30px;
+	padding: 3px;
+}
+
+.title-nav > a:hover,a:link,a:visited{
+	font-size: 50px;
+	color: rgba(17,0,200,0.8);
+	font-family: '"Trebuchet MS", Helvetica, sans-serif';
+	text-shadow: 0px 1px 2px rgba(17,100,30,0.9);
+}
+
+.row-coats{
+	padding: 0;
+	margin-bottom: 10px;
+}
+.coat{
+	width: 40px;
+	height: 50px;
+}
+
+.tercio{
+	width: 25%;
+}
+
+
+
+
+/* MAGIN */
+#fixturePlayoff{
+	width: 980px;
+	font-size: 11px;
+	color: white;
+	display: block;
+}
+
+.clasePlayoff{
+	font-family: Verdana;
+	margin: 0 auto;	
+}
+
+#copita{
+	width: 100%;
+}
+
+#columna{
+	float: left;
+	width: 140px;
+	min-height: 100%;
+	text-align: center;
+}
+
+.grupom{
+	color: #FCFCFC;
+	font-size: 18px;
+	text-shadow: black 0.1em 0.2em 0.2em;
+}
+
+.estiloPartido2{
+	padding: 30px;	
+	text-align: center;
+	background: rgba(50,50,100,0.7);
+	margin-bottom: 10px;
+	border-radius: 11px;
+	border: 1px solid;
+}
+.estiloPartidoNo1{
+	height: 90px;
+}
+
+.estiloPartidoNo2{
+	height: 180px;
+}
+
+.estiloPartidoNo3{
+	height: 273px;
+}
+
+#partidono4{
+	width: 90px;
+	height: 25px;
+	padding: 2px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.claseSpan{
+	font-size:10px;
+}
+
+.floatLeftDiv{
+	float:left;
+}
+
+.floatRightDiv{
+	float:right;
+}
+
+.brStyleClear{
+	clear: both;
+}
+
+.imagen100{
+	width:40px;
+}
+#copita{
+	width: 45%;
+}
+
+.estiloPartido{
+	padding: 10px;	
+	text-align: center;
+	background: rgba(50,50,100,0.7);
+	margin-bottom: 10px;
+	border-radius: 11px;
+	border: 1px solid;
+}
+.flag{
+	width:15px; height:10px;
+}
+
+.flag-margin-left{
+	margin-left: 4px;
+}
+
+.flag-margin-right{
+	margin-right: 4px;
+}
+
+.cero{
+	margin-top: 15px;
+	padding: 0;
+}
+
+.match_number{
+	font-size: 13px;
+	font-family: Verdana; 
+	color: rgb(255,255,255);
+	font-weight: bold;
+}
+
+.match_date-place{
+	font-size: 12px;
+	font-family: Verdana; 
+	color: rgb(255,255,255);
+}
+
+.centrar{
+	padding-left: 5%;padding-right: 5%;
+}
+
+.botones
+{
+	background-color: rgba(43,149,150,0.98);
+	width: 94%;
+	height: 60px;
+	border:1px outset #F3F3F1;
+	display: block;
+}
+
+.col-botones{
+	-moz-padding-start: 5px;
+	padding-top: 6px;
+    color:#53A4AC;
+}
+#dialogo{
+	display: none;
+}
+
+.my-clase-tip{
+	background: rgba(43,149,150,0.9);
+	color: white;
+	border: 0 outset transparent;
+	font-size: 14px;
+	font-family: 'Lucida Grande', sans-serif;
+	font-weight: bold;
+	line-height: 18px;
+	text-shadow: 0 1px black;
+	color: #FFFFFF;
+}
+
+.my-clase-tip .qtip-content{
+	font-size: 13px;
+	font-family: 'Lucida Grande', sans-serif;
+	font-weight: bold;
+}
+
+/** Taken from Bootstrap .popover-title */
+.my-clase-tip .qtip-titlebar{
+	padding: 8px 14px;
+	margin: 0;
+	font-size: 14px;
+	font-family: 'Lucida Grande', sans-serif;
+	font-weight: bold;
+	line-height: 18px;
+	background:rgba(50,188,100,0.9);
+	border-bottom: 1px solid #ebebeb;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.ancho-play{
+	width: 170px;
+}
+p{
+	text-align: left;
+}
+.boton-oscuro{
+	font-size: 21px;
+	color: #fff;
+}
+.boton-oscuro:hover{
+	font-size: 21px;
+	color: #000;
+	outline: none;
+	text-decoration: none;
+}
+.my-contenido-readme{
+	color: #fff;
+	background:rgba(50,188,100,0.5);
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 16px;
+	font-style: normal;
+}
+.caret{
+	color: #fff;
+	font-size: 21px;
+}
+.my-texto-readme{
+		margin-left: 5%;
+	margin-right: 5%;
+}

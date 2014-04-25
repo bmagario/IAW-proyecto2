@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<participants>
+   <participant id="1">
+      <name>Brasil</name>
+      <image>brasil.png</image>
+      <flag>fbrasil.png</flag>
+      <description>Selección de Brasil: Es la más exitosa en la historia de la Copa Mundial de Fútbol. Tiene tiene el récord de Campeonatos Mundiales ganados con 5 títulos y también posee el récord de más Copas Confederaciones ganadas con 4 títulos.</description>
+   </participant>
+
+   <participant id="2">
+      <name>Croacia</name>
+      <image>croacia.png</image>
+      <flag>fcroacia.png</flag>
+      <description>Selección de Croacia: Entre sus logros cuenta con un tercer puesto logrado en el Mundial de 1998 de Francia, firmando su mejor actuación en su estreno en la gran cita mundialista.</description>
+   </participant>
+
+   <participant id="3">
+      <name>Mexico</name>
+      <image>mexico.png</image>
+      <flag>fmexico.png</flag>
+      <description>Selección de México: Sus mayores logros a nivel internacional han sido, el titulo de la Copa FIFA Confederaciones 1999, torneo en el que fue anfitrión y los subcampeonatos de la Copa América de Ecuador 1993 y Colombia 2001.</description>
+   </participant>
+
+   <participant id="4">
+      <name>Camerun</name>
+      <image>camerun.png</image>
+      <flag>fcamerun.png</flag>
+      <description>Selección de Camerún: Es una de las selecciones más importantes de África, al haber ganado en cuatro ocasiones la Copa Africana de Naciones, en las ediciones de 1984, 1988, 2000, 2002.</description>
+   </participant>
+
+   <participant id="5">
+      <name>España</name>
+      <image>espana.png</image>
+      <flag>fespana.png</flag>
+      <description>Selección de España: Participo en trece ediciones de la Copa Mundial de Fútbol y fue la anfitriona de la edición de 1982. En Sudáfrica 2010 cosechó el mayor éxito de su historia al proclamarse campeona del mundo tras vencer por 0-1 a Holanda.</description>
+   </participant>
+
+   <participant id="6">
+      <name>Holanda</name>
+      <image>holanda.png</image>
+      <flag>fholanda.png</flag>
+      <description>Selección de Holanda:Es uno de los equipos más importantes del mundo. Si bien nunca ha ganado la Copa Mundial de Fútbol, ha estado presente en tres finales de este torneo, en 1974, en 1978 y en 2010.</description>
+   </participant>
+
+	<participant id="7">
+      <name>Chile</name>
+      <image>chile.png</image>
+      <flag>fchile.png</flag>
+      <description>Selección de Chile:El máximo logro de la selección chilena ha sido alcanzar el tercer lugar del mundo, tras superar a Yugoslavia en la Copa Mundial de 1962, cuando fue el anfitrión; además, alcanzó el 5º lugar en 1930, el 9º puesto en 1950 y el 10º lugar en 2010.</description>
+    </participant>
+
+	<participant id="8">
+      <name>Australia</name>
+      <image>australia.png</image>
+      <flag>faustralia.png</flag>
+      <description>Selección de Australia:Participo en tres Copas Mundiales: en 1974 y 2006, ambas realizadas en Alemania y el de 2010 en Sudáfrica.</description>
+   </participant>
+
+   <participant id="9">
+      <name>Colombia</name>
+      <image>colombia.png</image>
+      <flag>fcolombia.png</flag>
+      <description>Selección de Colombia:Su máximo logro internacional fue el título obtenido en Copa América 2001 realizada en Colombia (siendo campeón invicto durante todos los partidos del campeonato y sin recibir goles en contra).</description>
+   </participant>
+
+	<participant id="10">
+      <name>Grecia</name>
+      <image>grecia.png</image>
+      <flag>fgrecia.png</flag>
+      <description>Selección de Grecia:El combinado griego nunca tuvo grandes participaciones en el ámbito internacional hasta su época más reciente, pese a ser uno de los combinados más antiguos en afiliarse a la FIFA, en 1927.</description>
+    </participant>
+
+    <participant id="11">
+      <name>Costa de Marfil</name>
+      <image>costademarfil.png</image>
+      <flag>fcostademarfil.png</flag>
+      <description>Selección de Costa de Marfil:Con un total de 16 participaciones, Los Elefantes alzaron la Copa Africana de Naciones por primera vez en 1992.</description>
+   </participant>
+
+   <participant id="12">
+      <name>Japon</name>
+      <image>japon.png</image>
+      <flag>fjapon.png</flag>
+      <description>Selección de Japón:En las últimas décadas, el equipo japonés, se ha convertido en uno de los más fuertes de la confederación asiática, tras ganar cuatro veces la Copa Asiática y al clasificarse consecutivamente a las recientes cinco últimas copas mundiales.</description>
+   </participant>
+	<participant id="13">
+      <name>Uruguay</name>
+      <image>uruguay.png</image>
+      <flag>furuguay.png</flag>
+      <description>Selección de Uruguay:Uruguay es uno de los equipos más exitosos en el mundo ya que conquistó diecinueve competiciones oficiales reconocidas por la FIFA, récord a nivel mundial en las selecciones mayores.</description>
+    </participant>
+
+    <participant id="14">
+      <name>Costa Rica</name>
+      <image>costarica.png</image>
+      <flag>fcostarica.png</flag>
+      <description>Selección de Costa Rica:Costa Rica ha participado en tres Copas del Mundo y acaba de sellar su clasificación para su cuarto Mundial, mismo a disputar en Brasil 2014.</description>
+   </participant>
+
+   <participant id="15">
+      <name>Inglaterra</name>
+      <image>inglaterra.png</image>
+      <flag>finglaterra.png</flag>
+      <description>Selección de Inglaterra:El combinado inglés es el más antiguo de las existentes y tiene el honor de ser la primera selección nacional que jugó un partido internacional, el 30 de noviembre de 1872, contra su vecino escocés.</description>
+   </participant>
+
+	<participant id="16">
+      <name>Italia</name>
+      <image>italia.png</image>
+      <flag>fitalia.png</flag>
+      <description>Selección de Italia:Es el segundo equipo nacional más exitoso en la historia de la Copa Mundial, por detrás de Brasil, después de conquistar cuatro títulos en las ediciones de 1934, 1938, 1982 y 2006, siendo además el tercer equipo que ha disputado más finales.</description>
+    </participant>
+
+    <participant id="17">
+      <name>Suiza</name>
+      <image>suiza.png</image>
+      <flag>fsuiza.png</flag>
+      <description>Selección de Suiza:Los máximos logros internacionales de Suiza es haber llegado a cuartos de final en los mundiales de 1934, 1938 y 1954.</description>
+   </participant>
+
+   <participant id="18">
+      <name>Ecuador</name>
+      <image>ecuador.png</image>
+      <flag>fecuador.png</flag>
+      <description>Selección de Ecuador:La selección de Ecuador participó por primera vez en una Copa Mundial de Fútbol en el evento realizado el año 2002, tras haber obtenido el segundo lugar de la clasificatoria sudamericana, donde se destaca además el histórico triunfo sobre Brasil por primera vez en eliminatorias.</description>
+   </participant>
+
+	<participant id="19">
+      <name>Francia</name>
+      <image>francia.png</image>
+      <flag>ffrancia.png</flag>
+      <description>Selección de Francia:Ha participado en catorce ediciones de la Copa Mundial de Fútbol obteniendo el título en el Mundial de 1998, realizado en suelo francés, tras vencer en la final por 3:0 a Brasil. Más tarde fue finalista en el Mundial de 2006 perdiendo en la final ante Italia en definición por penaltis.</description>
+    </participant>
+
+    <participant id="20">
+      <name>Honduras</name>
+      <image>honduras.png</image>
+      <flag>fhonduras.png</flag>
+      <description>Selección de Honduras:Fundada en 1921, ha participado en diversos torneos internacionales, destacándose la Copa Mundial de Fútbol de 1982 realizada en España y la Copa Mundial de Fútbol de 2010 organizada en Sudáfrica. Acaba de clasificarse al Mundial de Brasil 2014 en lo que será su tercera cita mundialista, la segunda consecutiva.</description>
+   </participant>
+
+	<participant id="21">
+      <name>Argentina</name>
+      <image>argentina.png</image>
+      <flag>fargentina.png</flag>
+      <description>Selección de Argentina:La selección argentina es uno de los equipos más exitosos del fútbol mundial. Fue campeona en dos oportunidades de la Copa Mundial de Fútbol (1978 y 1986) y finalista en otras dos ocasiones (1930 y 1990).</description>
+    </participant>
+
+    <participant id="22">
+      <name>Bosnia</name>
+      <image>bosnia.png</image>
+      <flag>fbosnia.png</flag>
+      <description>Selección de Bosnia:Por primera vez en su historia participará en las Copas Mundiales, en esta ocasión para la Copa Mundial de Brasil 2014, debutando ante la Argentina.</description>
+   </participant>
+
+	<participant id="23">
+      <name>Iran</name>
+      <image>iran.png</image>
+      <flag>firan.png</flag>
+      <description>Selección de Irán:Irán es uno de los mejores equipos de Asia. En junio de 2005, Irán logró posicionarse como el 15º equipo del mundo en la clasificación mundial de la FIFA.</description>
+    </participant>
+
+    <participant id="24">
+      <name>Nigeria</name>
+      <image>nigeria.png</image>
+      <flag>fnigeria.png</flag>
+      <description>Selección de Nigeria:Es una selección con bastante historia internacional, en especial desde su primera aparición en una copa del mundo en 1994.</description>
+   </participant>
+
+	<participant id="25">
+      <name>Alemania</name>
+      <image>alemania.png</image>
+      <flag>falemania.png</flag>
+      <description>Selección de Alemania:Conquistó en tres oportunidades la Copa Mundial de Fútbol (1954, 1974 y 1990) situándola como la tercera mejor selección en el palmarés, únicamente superada por Brasil (5 copas) e Italia (4).</description>
+    </participant>
+
+    <participant id="26">
+      <name>Portugal</name>
+      <image>portugal.png</image>
+      <flag>fportugal.png</flag>
+      <description>Selección de Portugal:En el 2013, logro quedar segunda en su grupo detrás de Rusia, clasificándo a una repesca ante Suecia para clasificar a Brasil 2014,en aquel partido ganaron de locales 1-0 y vencieron de visitantes 3-2, siendo encasillada junto a Alemania, Ghana y Estados Unidos en Brasil 2014.</description>
+   </participant>
+
+	<participant id="27">
+      <name>Ghana</name>
+      <image>ghana.png</image>
+      <flag>fghana.png</flag>
+      <description>Selección de Ghana:El año 2006 sería el de su estreno en la Copa Mundial, cuando participó en el certamen celebrado en Alemania, donde realizó una destacada actuación llegando hasta los octavos de final tras ser eliminada por la selección brasileña.</description>
+    </participant>
+
+    <participant id="28">
+      <name>USA</name>
+      <image>USA.png</image>
+      <flag>fUSA.png</flag>
+      <description>Selección de USA:Disputó 9 ediciones en la Copa Mundial de Fútbol y su mejor resultado fue tercero en 1930. Ha ganado la Copa de Oro de la Concacaf en 5 oportunidades en 1991, 2002, 2005, 2007 y 2013, además llegando a la final de la Copa FIFA Confederaciones 2009, cuando cayeron ante Brasil por 3:2.</description>
+   </participant>
+
+	<participant id="29">
+      <name>Belgica</name>
+      <image>belgica.png</image>
+      <flag>fbelgica.png</flag>
+      <description>Selección de Bélgica:Bélgica ha participado en un total de once Copas Mundiales, alcanzando el cuarto puesto en 1986, tras ser derrotadas en semifinales por Argentina.</description>
+    </participant>
+
+    <participant id="30">
+      <name>Argelia</name>
+      <image>argelia.png</image>
+      <flag>fargelia.png</flag>
+      <description>Selección de Argelia:Ha logrado clasificarse para cuatro Copas del Mundo, las de 1982, 1986, 2010 y 2014. Argelia también ganó la Copa Africana de Naciones una vez en 1990 cuando fueron los organizadores del torneo.</description>
+   </participant>
+
+	<participant id="31">
+      <name>Rusia</name>
+      <image>rusia.png</image>
+      <flag>frusia.png</flag>
+      <description>Selección de Rusia:Rusia ha alcanzado en dos oportunidades la fase final de la Copa Mundial de Fútbol y en tres la de la Eurocopa, alcanzando su mayor logro en la edición de 2008 donde cayó en semifinales contra España.</description>
+    </participant>
+
+    <participant id="32">
+      <name>Corea del Sur</name>
+      <image>corea.png</image>
+      <flag>fcorea.png</flag>
+      <description>Selección de Corea:Corea del Sur es, sin lugar a dudas, uno de los equipos más fuertes del continente asiático. Ha participado en un total de ocho Copas Mundiales.</description>
+   </participant>
+
+</participants>

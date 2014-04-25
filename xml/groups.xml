@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worldcup>
+	<groups>
+		<group id="A">
+			<matchs>
+				<match id="1">
+					<date>2014-06-12T17:00:00-03:00</date>
+					<place>Sao Paulo</place>
+					<team_left>Brasil</team_left>
+					<team_right>Croacia</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-13T13:00:00-03:00</date>
+					<place>Natal</place>
+					<team_left>Mexico</team_left>
+					<team_right>Camerun</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-17T16:00:00-03:00</date>
+					<place>Fortaleza</place>
+					<team_left>Brasil</team_left>
+					<team_right>Mexico</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-18T16:00:00-03:00</date>
+					<place>Manaos</place>
+					<team_left>Camerun</team_left>
+					<team_right>Croacia</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-23T17:00:00-03:00</date>
+					<place>Brasilia</place>
+					<team_left>Camerun</team_left>
+					<team_right>Brasil</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-23T17:00:00-03:00</date>
+					<place>Recife</place>
+					<team_left>Croacia</team_left>
+					<team_right>Mexico</team_right>
+				</match>
+			</matchs>
+		</group>
+		<group id="B">
+			<matchs>
+				<match id="1">
+					<date>2014-06-13T16:00:00-03:00</date>
+					<place>Bahia</place>
+					<team_left>España</team_left>
+					<team_right>Holanda</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-13T19:00:00-03:00</date>
+					<place>Cuiaba</place>
+					<team_left>Chile</team_left>
+					<team_right>Australia</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-18T13:00:00-03:00</date>
+					<place>Porto Alegre</place>
+					<team_left>Australia</team_left>
+					<team_right>Holanda</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-18T19:00:00-03:00</date>
+					<place>Rio de Janeiro</place>
+					<team_left>España</team_left>
+					<team_right>Chile</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-23T13:00:00-03:00</date>
+					<place>Curitiba</place>
+					<team_left>Australia</team_left>
+					<team_right>España</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-23T13:00:00-03:00</date>
+					<place>Sao Paulo</place>
+					<team_left>Holanda</team_left>
+					<team_right>Chile</team_right>
+				</match>
+			</matchs>
+		</group>
+		<group id="C">
+			<matchs>
+				<match id="1">
+					<date>2014-06-15T13:00:00-03:00</date>
+					<place>Belo Horizonte</place>
+					<team_left>Colombia</team_left>
+					<team_right>Grecia</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-14T22:00:00-03:00</date>
+					<place>Recife</place>
+					<team_left>Costa de Marfil</team_left>
+					<team_right>Japon</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-19T13:00:00-03:00</date>
+					<place>Brasilia</place>
+					<team_left>Colombia</team_left>
+					<team_right>Costa de Marfil</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-19T19:00:00-03:00</date>
+					<place>Natal</place>
+					<team_left>Japon</team_left>
+					<team_right>Grecia</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-24T17:00:00-03:00</date>
+					<place>Cuiaba</place>
+					<team_left>Japon</team_left>
+					<team_right>Colombia</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-24T17:00:00-03:00</date>
+					<place>Fortaleza</place>
+					<team_left>Grecia</team_left>
+					<team_right>Costa de Marfil</team_right>
+				</match>
+			</matchs>
+		</group>
+		<group id="D">
+			<matchs>
+				<match id="1">
+					<date>2014-06-14T16:00:00-03:00</date>
+					<place>Fortaleza</place>
+					<team_left>Uruguay</team_left>
+					<team_right>Costa Rica</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-14T18:00:00-03:00</date>
+					<place>Manaos</place>
+					<team_left>Inglaterra</team_left>
+					<team_right>Italia</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-19T16:00:00-03:00</date>
+					<place>Sao Paulo</place>
+					<team_left>Uruguay</team_left>
+					<team_right>Inglaterra</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-20T13:00:00-03:00</date>
+					<place>Recife</place>
+					<team_left>Italia</team_left>
+					<team_right>Costa Rica</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-24T13:00:00-03:00</date>
+					<place>Natal</place>
+					<team_left>Italia</team_left>
+					<team_right>Uruguay</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-24T13:00:00-03:00</date>
+					<place>Belo Horizonte</place>
+					<team_left>Costa Rica</team_left>
+					<team_right>Inglaterra</team_right>
+				</match>
+			</matchs>
+		</group>
+		<group id="E">
+			<matchs>
+				<match id="1">
+					<date>2014-06-15T13:00:00-03:00</date>
+					<place>Brasilia</place>
+					<team_left>Suiza</team_left>
+					<team_right>Ecuador</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-15T16:00:00-03:00</date>
+					<place>Porto Alegre</place>
+					<team_left>Francia</team_left>
+					<team_right>Honduras</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-20T16:00:00-03:00</date>
+					<place>Bahia</place>
+					<team_left>Suiza</team_left>
+					<team_right>Francia</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-20T19:00:00-03:00</date>
+					<place>Curitiba</place>
+					<team_left>Honduras</team_left>
+					<team_right>Ecuador</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-25T17:00:00-03:00</date>
+					<place>Manaos</place>
+					<team_left>Honduras</team_left>
+					<team_right>Suiza</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-25T17:00:00-03:00</date>
+					<place>Rio de Janeiro</place>
+					<team_left>Ecuador</team_left>
+					<team_right>Francia</team_right>
+				</match>
+			</matchs>
+		</group>
+		<group id="F">
+			<matchs>
+				<match id="1">
+					<date>2014-06-15T19:00:00-03:00</date>
+					<place>Rio de Janeiro</place>
+					<team_left>Argentina</team_left>
+					<team_right>Bosnia</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-16T16:00:00-03:00</date>
+					<place>Curitiba</place>
+					<team_left>Iran</team_left>
+					<team_right>Nigeria</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-21T13:00:00-03:00</date>
+					<place>Belo Horizonte</place>
+					<team_left>Argentina</team_left>
+					<team_right>Iran</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-21T19:00:00-03:00</date>
+					<place>Cuiaba</place>
+					<team_left>Nigeria</team_left>
+					<team_right>Bosnia</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-25T13:00:00-03:00</date>
+					<place>Porto Alegre</place>
+					<team_left>Nigeria</team_left>
+					<team_right>Argentina</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-25T13:00:00-03:00</date>
+					<place>Bahia</place>
+					<team_left>Bosnia</team_left>
+					<team_right>Iran</team_right>
+				</match>
+			</matchs>
+		</group>
+		<group id="G">
+			<matchs>
+				<match id="1">
+					<date>2014-06-16T13:00:00-03:00</date>
+					<place>Bahia</place>
+					<team_left>Alemania</team_left>
+					<team_right>Portugal</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-16T19:00:00-03:00</date>
+					<place>Natal</place>
+					<team_left>Ghana</team_left>
+					<team_right>USA</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-21T16:00:00-03:00</date>
+					<place>Fortaleza</place>
+					<team_left>Alemania</team_left>
+					<team_right>Ghana</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-22T16:00:00-03:00</date>
+					<place>Manaos</place>
+					<team_left>USA</team_left>
+					<team_right>Portugal</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-26T13:00:00-03:00</date>
+					<place>Recife</place>
+					<team_left>USA</team_left>
+					<team_right>Alemania</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-26T13:00:00-03:00</date>
+					<place>Brasilia</place>
+					<team_left>Portugal</team_left>
+					<team_right>Ghana</team_right>
+				</match>
+			</matchs>
+		</group>
+		<group id="H">
+			<matchs>
+				<match id="1">
+					<date>2014-06-17T13:00:00-03:00</date>
+					<place>Belo Horizonte</place>
+					<team_left>Belgica</team_left>
+					<team_right>Argelia</team_right>
+				</match>
+				<match id="2">
+					<date>2014-06-17T19:00:00-03:00</date>
+					<place>Cuiaba</place>
+					<team_left>Rusia</team_left>
+					<team_right>Corea del Sur</team_right>
+				</match>
+				<match id="3">
+					<date>2014-06-22T13:00:00-03:00</date>
+					<place>Porto Alegre</place>
+					<team_left>Corea del Sur</team_left>
+					<team_right>Argelia</team_right>
+				</match>
+				<match id="4">
+					<date>2014-06-22T19:00:00-03:00</date>
+					<place>Rio de Janeiro</place>
+					<team_left>Belgica</team_left>
+					<team_right>Rusia</team_right>
+				</match>
+				<match id="5">
+					<date>2014-06-26T17:00:00-03:00</date>
+					<place>Sao Paulo</place>
+					<team_left>Corea del Sur</team_left>
+					<team_right>Belgica</team_right>
+				</match>
+				<match id="6">
+					<date>2014-06-26T17:00:00-03:00</date>
+					<place>Curitiba</place>
+					<team_left>Argelia</team_left>
+					<team_right>Rusia</team_right>
+				</match>
+			</matchs>
+		</group>
+	</groups>
+	<playoff>
+		<octavos1>
+			<match id="1">
+				<date>2014-06-28T13:00:00-03:00</date>
+				<place>Belo Horizonte</place>
+			</match>
+			<match id="2">
+				<date>2014-06-28T17:00:00-03:00</date>
+				<place>Rio de Janeiro</place>
+			</match>
+			<match id="3">
+				<date>2014-06-29T13:00:00-03:00</date>
+				<place>Fortaleza</place>
+			</match>
+			<match id="4">
+				<date>2014-06-29T17:00:00-03:00</date>
+				<place>Recife</place>
+			</match>
+		</octavos1>
+		<octavos2>
+			<match id="1">
+				<date>2014-06-30T13:00:00-03:00</date>
+				<place>Brasilia</place>
+			</match>
+			<match id="2">
+				<date>2014-06-30T17:00:00-03:00</date>
+				<place>Porto Alegre</place>
+			</match>
+			<match id="3">
+				<date>2014-07-01T13:00:00-03:00</date>
+				<place>Sao Paulo</place>
+			</match>
+			<match id="4">
+				<date>2014-07-01T17:00:00-03:00</date>
+				<place>Bahia</place>
+			</match>
+		</octavos2>
+		<cuartos1>
+			<match id="1">
+				<date>2014-07-04T13:00:00-03:00</date>
+				<place>Rio de Janeiro</place>
+			</match>
+			<match id="2">
+				<date>2014-07-04T17:00:00-03:00</date>
+				<place>Fortaleza</place>
+			</match>
+		</cuartos1>
+		<cuartos2>
+			<match id="3">
+				<date>2014-07-05T13:00:00-03:00</date>
+				<place>Brasilia</place>
+			</match>
+			<match id="4">
+				<date>2014-07-05T17:00:00-03:00</date>
+				<place>Bahia</place>
+			</match>
+		</cuartos2>
+		<semi1>
+			<match id="1">
+				<date>2014-07-08T17:00:00-03:00</date>
+				<place>Belo Horizonte</place>
+			</match>
+		</semi1>
+		<semi2>
+			<match id="2">
+				<date>2014-07-09T17:00:00-03:00</date>
+				<place>Sao Paulo</place>
+			</match>
+		</semi2>
+		<final>
+			<match id="1">
+				<date>2014-07-13T16:00:00-03:00</date>
+				<place>Rio de Janeiro</place>
+			</match>
+		</final>
+    </playoff> 
+</worldcup>
