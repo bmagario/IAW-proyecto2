@@ -1,27 +1,29 @@
+var grupos_json;
+var playoffs_json;
+var participantes_json;
+
 $(document).ready(function(){
-  loadXML_DOCS();
+  load_DOCS();
 });
 
-var xml;
-var xmlDocPart;
 
-function loadXML_participants()
-{ 
-  xmlDocPart=loadXMLDoc("xml/participants.xml");
+function load_participants(){ 
+  participantes_json = participantes.participant;
 }   
 
-function loadXML_groups(){
-  xml=loadXMLDoc("xml/groups.xml");
+function load_groups(){
+  grupos_json = grupos.group;
+}
+function load_playoffs(){
+   playoffs_json = playoffs.playoff;
 }
 
-function loadXML_DOCS(){
-  loadXML_groups();
-  loadXML_participants();
-    //Conseguir el elemento correspondiente a grupo. Hay 8 grupos
-  var grupos = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("groups")[0].getElementsByTagName("group");
-  var teams = xmlDocPart.getElementsByTagName("participants")[0].getElementsByTagName("participant");
- 
-  buildGroups(grupos,teams);
+function load_DOCS(){
+  load_groups();
+  load_participants();
+  load_playoffs();
+
+  buildGroups();
   buildPlayoffs();
   myTableSorterWidget();
   cargarInputs();  
@@ -31,13 +33,12 @@ function loadXML_DOCS(){
 
 
 
-function buildGroups(grupos,teams){
+function buildGroups(){
   element = $('#main');
   var html = '';
   html += '<div class="container my-container">';
-
-  for (var i = 0; i < grupos.length; i++){
-    var id_grupo = grupos[i].getAttribute("id");
+  for (var i = 0; i < grupos_json.length; i++){
+    var id_grupo = grupos_json[i].id;
     html += '<div class="row widget" id="grupo'+id_grupo+'">'+
             '<div class="col-md-12 col-lg-12">'+
             '<div class="row">'+
@@ -55,10 +56,10 @@ function buildGroups(grupos,teams){
     var desc2;
     for(var h=0;h<4;h++){
       id = (i*4)+(h+1)-1;
-      coat = teams[id].getElementsByTagName("image")[0].childNodes[0].nodeValue;
-      desc1 = teams[id].getElementsByTagName("description")[0].childNodes[0].nodeValue;
+      coat = participantes_json[id].image;
+      desc1 = participantes_json[id].description;
       desc1 = desc1.substring(0, desc1.indexOf(':'));
-      desc2 = teams[id].getElementsByTagName("description")[0].childNodes[0].nodeValue;
+      desc2 = participantes_json[id].description;
       desc2 = desc2.substring(desc2.indexOf(':')+1);
       html += '<img class="coat" src="images/coats/'+coat+'" alt= "'+desc1+'"title="'+desc2+'">';
     }
@@ -67,22 +68,22 @@ function buildGroups(grupos,teams){
               '</div>'+
               '<div class="row" id="grupo'+id_grupo+'Partidos">'; //Begin Section Partidos
               
-    var partidos = grupos[i].getElementsByTagName("matchs")[0].getElementsByTagName("match");
+    var partidos = grupos_json[i].match;
     for(var j=0;j<partidos.length;j++){
-        var date = partidos[j].getElementsByTagName("date")[0].childNodes[0].nodeValue;
-        var place = partidos[j].getElementsByTagName("place")[0].childNodes[0].nodeValue;
-        var left = partidos[j].getElementsByTagName("team_left")[0].childNodes[0].nodeValue;
-        var right = partidos[j].getElementsByTagName("team_right")[0].childNodes[0].nodeValue;
-        var number = partidos[j].getAttribute("id");
+        var date = partidos[j].date;
+        var place = partidos[j].place;
+        var left = partidos[j].team_left;
+        var right = partidos[j].team_right;
+        var number = partidos[j].id;
 
         var flag_l;
         var flag_r;
-        flag = teams[id].getElementsByTagName("flag")[0].childNodes[0].nodeValue;
+        flag = participantes_json[j].flag;
         var left_right;
         for(var p=0;p<32;p++){
-          left_right = teams[p].getElementsByTagName("name")[0].childNodes[0].nodeValue;
-          if(left === left_right) {flag_l = teams[p].getElementsByTagName("flag")[0].childNodes[0].nodeValue;}
-          if(right === left_right) {flag_r = teams[p].getElementsByTagName("flag")[0].childNodes[0].nodeValue;}
+          left_right = participantes_json[p].name;
+          if(left === left_right) {flag_l = participantes_json[p].flag;}
+          if(right === left_right) {flag_r = participantes_json[p].flag;}
         }
       html += '<div class="col-md-4 col-lg-4">'+
               '<div class="row estiloPartido">'+
@@ -135,7 +136,7 @@ function buildGroups(grupos,teams){
     var name_split;
     for(var m=0;m<4;m++){
       id = (i*4)+(m+1)-1;
-      name = teams[id].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+      name = participantes_json[id].name;
       if(name.indexOf(' ') !== -1){
         name_split = name.replace(/\s/g,'_');
       }
@@ -143,7 +144,7 @@ function buildGroups(grupos,teams){
       {
         name_split = name;
       }
-      flag_team = teams[id].getElementsByTagName("flag")[0].childNodes[0].nodeValue;
+      flag_team = participantes_json[id].flag;
       html += '<tr id="'+name_split+'"><td>'+(m+1)+'</td><td class="equipo"><img class="flag flag-margin-right" src="images/flags/'+flag_team +'">'+name+'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>';
     }
         
@@ -175,26 +176,26 @@ var divFinal;
 function buildPlayoffs()
 {
   divOctavos1 = document.getElementById('octavos1');
-  linksOctavos1 = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("playoff")[0].getElementsByTagName("octavos1")[0].getElementsByTagName("match");
+  linksOctavos1 = playoffs_json.octavos1;
   generarCuadrado(divOctavos1, linksOctavos1);
   divOctavos2 = document.getElementById('octavos2');
-  linksOctavos2 = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("playoff")[0].getElementsByTagName("octavos2")[0].getElementsByTagName("match");
+  linksOctavos2 = playoffs_json.octavos2;
   generarCuadrado(divOctavos2, linksOctavos2);
   divCuartos1 = document.getElementById('cuartos1');
-  linksCuartos1 = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("playoff")[0].getElementsByTagName("cuartos1")[0].getElementsByTagName("match");
+  linksCuartos1 = playoffs_json.cuartos1;
   generarCuadrado(divCuartos1, linksCuartos1);
   divCuartos2 = document.getElementById('cuartos2');
-  linksCuartos2 = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("playoff")[0].getElementsByTagName("cuartos2")[0].getElementsByTagName("match");
+  linksCuartos2 = playoffs_json.cuartos2;
   generarCuadrado(divCuartos2, linksCuartos2);
   divSemi1 = document.getElementById('semi1');
-  linksSemi1 = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("playoff")[0].getElementsByTagName("semi1")[0].getElementsByTagName("match");
+  linksSemi1 = playoffs_json.semi1;
   generarCuadrado(divSemi1, linksSemi1);
   divSemi2 = document.getElementById('semi2');
-  linksSemi2 = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("playoff")[0].getElementsByTagName("semi2")[0].getElementsByTagName("match");
+  linksSemi2 = playoffs_json.semi2;
   generarCuadrado(divSemi2, linksSemi2);   
 
   divFinal = document.getElementById('final');
-  linksFinal = xml.getElementsByTagName("worldcup")[0].getElementsByTagName("playoff")[0].getElementsByTagName("final")[0].getElementsByTagName("match");
+  linksFinal = playoffs_json.final;
   generarCuadrado(divFinal, linksFinal); 
 }
 
@@ -204,8 +205,8 @@ function generarCuadrado(variable1, variable2)
     for (var i = 0; i < variable2.length; i++) 
     {  
       var cont = 0;
-      var datei  = variable2[i].getElementsByTagName("date")[0].childNodes[0].nodeValue;
-      var placei = variable2[i].getElementsByTagName("place")[0].childNodes[0].nodeValue; 
+      var datei  = variable2[i].date;
+      var placei = variable2[i].place;
       var stringi="";
 
       if((variable1 === divCuartos1 || variable1 === divCuartos2) && i === 0){cont = 1;}
@@ -214,7 +215,7 @@ function generarCuadrado(variable1, variable2)
 
       stringi += '<div class="estiloPartidoNo'+cont+'"></div>';
 
-      if(variable1 != divFinal){stringi +='<div class="estiloPartido ancho-play">';}
+      if(variable1 !== divFinal){stringi +='<div class="estiloPartido ancho-play">';}
       else  {stringi+='<div class="estiloPartido2">';}
 
       stringi +='<span class="fecha">'+datei+'<br>'+placei+'</span><br>';
@@ -237,14 +238,14 @@ function generarCuadrado(variable1, variable2)
       var numero;
       var texto = "disabled";
       var clase;
-      if(variable1 != divFinal)
+      if(variable1 !== divFinal)
       {          
-          if(variable1==divOctavos1)  { numero = 1; texto = "";clase = "octavos"; }
-          if(variable1==divOctavos2)  { numero = 9; texto = "";clase = "octavos"; }
-          if(variable1==divCuartos1){ numero = 17; clase = "cuartos";}
-          if(variable1==divCuartos2) {numero = 21;   clase = "cuartos";}       
-          if(variable1==divSemi1) {numero = 25;clase = "semis";}
-          if(variable1==divSemi2) {numero = 27;clase = "semis";}
+          if(variable1===divOctavos1)  { numero = 1; texto = "";clase = "octavos"; }
+          if(variable1===divOctavos2)  { numero = 9; texto = "";clase = "octavos"; }
+          if(variable1===divCuartos1){ numero = 17; clase = "cuartos";}
+          if(variable1===divCuartos2) {numero = 21;   clase = "cuartos";}       
+          if(variable1===divSemi1) {numero = 25;clase = "semis";}
+          if(variable1===divSemi2) {numero = 27;clase = "semis";}
 
           var j = i+i+numero;
           var h = j+1;          
@@ -833,7 +834,7 @@ function pasarEquiposOctavos(id_table)
       document.getElementById("Partido1").innerHTML = arreglarString(localStorage.getItem("Octavos11"));
       document.getElementById("Imagen1").src = "images/flags/f"+localStorage.getItem("Octavos11")+".png";
       localStorage.setItem("Octavos22", nombre_segundo);
-      document.getElementById("Partido10").innerHTML = arreglarString(localStorage.getItem("Octavos22"))
+      document.getElementById("Partido10").innerHTML = arreglarString(localStorage.getItem("Octavos22"));
       document.getElementById("Imagen10").src = "images/flags/f"+localStorage.getItem("Octavos22")+".png";
       break;
     case 1:
@@ -849,10 +850,10 @@ function pasarEquiposOctavos(id_table)
         }
       }
       localStorage.setItem("Octavos12", nombre_primero);
-      document.getElementById("Partido2").innerHTML = arreglarString(localStorage.getItem("Octavos12"))
+      document.getElementById("Partido2").innerHTML = arreglarString(localStorage.getItem("Octavos12"));
       document.getElementById("Imagen2").src = "images/flags/f"+localStorage.getItem("Octavos12")+".png";
       localStorage.setItem("Octavos21", nombre_segundo);
-      document.getElementById("Partido9").innerHTML = arreglarString(localStorage.getItem("Octavos21"))
+      document.getElementById("Partido9").innerHTML = arreglarString(localStorage.getItem("Octavos21"));
       document.getElementById("Imagen9").src = "images/flags/f"+localStorage.getItem("Octavos21")+".png";
       break;
     case 2:
@@ -868,10 +869,10 @@ function pasarEquiposOctavos(id_table)
         }
       }
       localStorage.setItem("Octavos13", nombre_primero);
-      document.getElementById("Partido3").innerHTML = arreglarString(localStorage.getItem("Octavos13"))
+      document.getElementById("Partido3").innerHTML = arreglarString(localStorage.getItem("Octavos13"));
       document.getElementById("Imagen3").src = "images/flags/f"+localStorage.getItem("Octavos13")+".png";
       localStorage.setItem("Octavos24", nombre_segundo);
-      document.getElementById("Partido12").innerHTML = arreglarString(localStorage.getItem("Octavos24"))
+      document.getElementById("Partido12").innerHTML = arreglarString(localStorage.getItem("Octavos24"));
       document.getElementById("Imagen12").src = "images/flags/f"+localStorage.getItem("Octavos24")+".png";
       break;
     case 3:
@@ -887,33 +888,33 @@ function pasarEquiposOctavos(id_table)
         }
       }
       localStorage.setItem("Octavos14", nombre_primero);
-      document.getElementById("Partido4").innerHTML = arreglarString(localStorage.getItem("Octavos14"))
+      document.getElementById("Partido4").innerHTML = arreglarString(localStorage.getItem("Octavos14"));
       document.getElementById("Imagen4").src = "images/flags/f"+localStorage.getItem("Octavos14")+".png";
       localStorage.setItem("Octavos23", nombre_segundo);
-      document.getElementById("Partido11").innerHTML = arreglarString(localStorage.getItem("Octavos23"))
+      document.getElementById("Partido11").innerHTML = arreglarString(localStorage.getItem("Octavos23"));
       document.getElementById("Imagen11").src = "images/flags/f"+localStorage.getItem("Octavos23")+".png";
       break;
     case 4:
       localStorage.setItem("Octavos15", nombre_primero);
-      document.getElementById("Partido5").innerHTML = arreglarString(localStorage.getItem("Octavos15"))
+      document.getElementById("Partido5").innerHTML = arreglarString(localStorage.getItem("Octavos15"));
       document.getElementById("Imagen5").src = "images/flags/f"+localStorage.getItem("Octavos15")+".png";
       localStorage.setItem("Octavos26", nombre_segundo);
-      document.getElementById("Partido14").innerHTML = arreglarString(localStorage.getItem("Octavos26"))
+      document.getElementById("Partido14").innerHTML = arreglarString(localStorage.getItem("Octavos26"));
       document.getElementById("Imagen14").src = "images/flags/f"+localStorage.getItem("Octavos26")+".png";
       break;
     case 5:
       localStorage.setItem("Octavos16", nombre_primero);
-      document.getElementById("Partido6").innerHTML = arreglarString(localStorage.getItem("Octavos16"))
+      document.getElementById("Partido6").innerHTML = arreglarString(localStorage.getItem("Octavos16"));
       document.getElementById("Imagen6").src = "images/flags/f"+localStorage.getItem("Octavos16")+".png";
       localStorage.setItem("Octavos25", nombre_segundo);
-      document.getElementById("Partido13").innerHTML = arreglarString(localStorage.getItem("Octavos25"))
+      document.getElementById("Partido13").innerHTML = arreglarString(localStorage.getItem("Octavos25"));
       document.getElementById("Imagen13").src = "images/flags/f"+localStorage.getItem("Octavos25")+".png";
       break;
     case 6:
       var flag1;
       var flag2;
       localStorage.setItem("Octavos17", nombre_primero);
-      document.getElementById("Partido7").innerHTML = arreglarString(localStorage.getItem("Octavos17"))
+      document.getElementById("Partido7").innerHTML = arreglarString(localStorage.getItem("Octavos17"));
       if(localStorage.getItem("Octavos17") === "usa") 
         flag1 = "USA";
       else
@@ -921,7 +922,7 @@ function pasarEquiposOctavos(id_table)
       document.getElementById("Imagen7").src = "images/flags/f"+flag1+".png";
       localStorage.setItem("Octavos28", nombre_segundo);
 
-      document.getElementById("Partido16").innerHTML = arreglarString(localStorage.getItem("Octavos28"))
+      document.getElementById("Partido16").innerHTML = arreglarString(localStorage.getItem("Octavos28"));
 
       if(localStorage.getItem("Octavos28") === "usa") 
         flag2 = "USA";
@@ -942,10 +943,10 @@ function pasarEquiposOctavos(id_table)
         }
       }
       localStorage.setItem("Octavos18", nombre_primero);
-      document.getElementById("Partido8").innerHTML = arreglarString(localStorage.getItem("Octavos18"))
+      document.getElementById("Partido8").innerHTML = arreglarString(localStorage.getItem("Octavos18"));
       document.getElementById("Imagen8").src = "images/flags/f"+localStorage.getItem("Octavos18")+".png";
       localStorage.setItem("Octavos27", nombre_segundo);
-      document.getElementById("Partido15").innerHTML = arreglarString(localStorage.getItem("Octavos27"))
+      document.getElementById("Partido15").innerHTML = arreglarString(localStorage.getItem("Octavos27"));
       document.getElementById("Imagen15").src = "images/flags/f"+localStorage.getItem("Octavos27")+".png";
       break;
   }
@@ -958,7 +959,7 @@ function arreglarString(string){
  arrayWords = string.split(" ");
  len = arrayWords.length;
  for(i=0;i < len ;i++){
-  if(i != (len-1)){
+  if(i !== (len-1)){
    returnString = returnString+ucFirst(arrayWords[i])+" ";
   }
   else{

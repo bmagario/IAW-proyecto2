@@ -1,25 +1,23 @@
-
 <!doctype html>
-
 
 <html lang="en">
 <head>
 
-	<title>Copa Mundial 2014</title>
+    <title>Copa Mundial 2014</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="images/icon.ico"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="shortcut icon" href="images/icon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
     <!-- Pick a theme, load the plugin & initialize plugin -->
-  <link href="css/theme.default.css" rel="stylesheet">
-  <link href="css/jquery.qtip.min.css" rel="stylesheet">
+    <link href="css/theme.default.css" rel="stylesheet">
+    <link href="css/jquery.qtip.min.css" rel="stylesheet">
   
-	<link id="user_style" rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link id="user_style" rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
   <!-- Scripts -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
@@ -32,7 +30,9 @@
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="js/jquery.tablesorter.min.js"></script>
   <script src="js/jquery.tablesorter.widgets.min.js"></script>
-  <script src="js/loadXML.js" type="text/javascript"></script>
+  <script src="js/participants.js" type="text/javascript"></script>
+  <script src="js/groups.js" type="text/javascript"></script>
+  <script src="js/playoffs.js" type="text/javascript"></script>
   <script src="js/fixture.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>
   
