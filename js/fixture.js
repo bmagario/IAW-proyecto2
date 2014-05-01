@@ -7,161 +7,29 @@ $(document).ready(function(){
 });
 
 
-function load_participants(){ 
-  participantes_json = participantes.participant;
-}   
-
-function load_groups(){
-  grupos_json = grupos.group;
-}
 function load_playoffs(){
    playoffs_json = playoffs.playoff;
 }
 
 function load_DOCS(){
-  load_groups();
-  load_participants();
-  load_playoffs();
-
   buildGroups();
+  load_playoffs();
   buildPlayoffs();
-  myTableSorterWidget();
-  cargarInputs();  
-  description();
 }
 
-
-
-
 function buildGroups(){
-  element = $('#main');
-  var html = '';
-  html += '<div class="container my-container">';
-  for (var i = 0; i < grupos_json.length; i++){
-    var id_grupo = grupos_json[i].id;
-    html += '<div class="row widget" id="grupo'+id_grupo+'">'+
-            '<div class="col-md-12 col-lg-12">'+
-            '<div class="row">'+
-            '<div class="col-md-12 col-lg-12">'+
-            '<span class="group-title fa fa-chevron-up">Grupo'+id_grupo+'</span>'+
-            '</div>'+ 
-            '</div>'+
-            '<div class="row main">'+
-            '<div class="col-md-12 col-lg-12">'+
-            '<div class="row row-coats">'+
-            '<div class="col-md-8 col-lg-8 col-md-offset-2">';
-
-    var coat;
-    var desc1;
-    var desc2;
-    for(var h=0;h<4;h++){
-      id = (i*4)+(h+1)-1;
-      coat = participantes_json[id].image;
-      desc1 = participantes_json[id].description;
-      desc1 = desc1.substring(0, desc1.indexOf(':'));
-      desc2 = participantes_json[id].description;
-      desc2 = desc2.substring(desc2.indexOf(':')+1);
-      html += '<img class="coat" src="images/coats/'+coat+'" alt= "'+desc1+'"title="'+desc2+'">';
-    }
-    
-      html += '</div>'+
-              '</div>'+
-              '<div class="row" id="grupo'+id_grupo+'Partidos">'; //Begin Section Partidos
-              
-    var partidos = grupos_json[i].match;
-    for(var j=0;j<partidos.length;j++){
-        var date = partidos[j].date;
-        var place = partidos[j].place;
-        var left = partidos[j].team_left;
-        var right = partidos[j].team_right;
-        var number = partidos[j].id;
-
-        var flag_l;
-        var flag_r;
-        flag = participantes_json[j].flag;
-        var left_right;
-        for(var p=0;p<32;p++){
-          left_right = participantes_json[p].name;
-          if(left === left_right) {flag_l = participantes_json[p].flag;}
-          if(right === left_right) {flag_r = participantes_json[p].flag;}
-        }
-      html += '<div class="col-md-4 col-lg-4">'+
-              '<div class="row estiloPartido">'+
-              '<div class="col-md-12 col-lg-12">'+
-              '<div class="row">'+
-              '<div class="col-md-12 col-lg-12 match_number">Partido nº '+number+'</div>'+
-              '</div>'+
-              '<div class="row">'+
-              '<div class="col-md-12 col-lg-12 match_date-place">'+date+'</div>'+
-              '</div>'+
-              '<div class="row">'+
-              '<div class="col-md-12 col-lg-12 match_date-place">'+place+'</div>'+
-              '</div>';//End place
-        
-      var game1 = 1+''+i + '' + j + '' + 101;
-      var game2 = 1+''+i + '' + j + '' + 102;
-      html += '<div class="row centrar">'+
-              '<div class="col-md-5 col-lg-4 cero">'+
-              '<img class="flag flag-margin-right" src="images/flags/'+flag_l +'">'+
-              '<label class="control-label name_left">'+left+'</label>'+
-              '</div>'+
-              '<div class="col-md-1 col-lg-1 input_goles">'+
-              '<input type="text" name="'+game1+'" id="'+game1+'" class="form-control grupos_i">'+
-              '</div>'+
-              '<div class="col-md-1 col-lg-1 input_goles">'+
-              '<input type="text" name="" id="'+game2+'" class="form-control grupos_i">'+
-              '</div>'+
-              '<div class="col-md-5 col-lg-4 cero">'+
-              '<label class="control-label name_right">'+right+'</label>'+
-              '<img class="flag flag-margin-left" src="images/flags/'+flag_r +'">'+
-              '</div>'+
-              '</div>'+
-              '</div>'+
-              '</div>'+
-              '</div>';//End a match
-    }
-      html += '</div>'+
-              '</div>'+
-              '<div class="row" id="grupo'+id_grupo+'Posiciones">'+                                          
-              '<div class="col-md-6 col-md-offset-3">'+              
-              '<table class="table" id="table'+i+'">'+
-              '<thead><tr><th>POS</th><th>Equipo</th><th>PJ</th><th>PG</th>'+
-              '<th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>PTS</th></tr>'+
-              '</thead>'+
-              '<tbody>';
-
-    //Aca tengo que poner el tema de los participantes
-    var name;
-    var flag_team;
-    var name_split;
-    for(var m=0;m<4;m++){
-      id = (i*4)+(m+1)-1;
-      name = participantes_json[id].name;
-      if(name.indexOf(' ') !== -1){
-        name_split = name.replace(/\s/g,'_');
-      }
-      else 
-      {
-        name_split = name;
-      }
-      flag_team = participantes_json[id].flag;
-      html += '<tr id="'+name_split+'"><td>'+(m+1)+'</td><td class="equipo"><img class="flag flag-margin-right" src="images/flags/'+flag_team +'">'+name+'</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>';
-    }
-        
-      html += '</tbody>'+
-              '</table>'+
-              '</div>'+
-              '</div>'+                  
-              '</div>'+
-              '</div>'+
-              '</div>';//End row widget and section posiciones
-  }
-  html += '</div>';
-  element.append(html);
-
+    analizarInputs();
+  cargarInputs(); 
   sortTablePositions();
   slideToggleGroups();
   coatsZoom();
+  description();
+  myTableSorterWidget();
+  botonesFocus();
+  randomValues();
+  deleteAllValues();
+  expandirGrupos();
+  contraerGrupos();
 }
 
 var divCuartos1, divCuartos2;
@@ -319,6 +187,7 @@ function actualizarSorter(tabla) {
       }
     });
 }
+
 function slideToggleGroups(){
     $('.group-title').click(function(){
        var element = $(this);
@@ -348,7 +217,7 @@ function analizarDatos(id, value)
 {
   var numero =  parseInt(id);
   var x = numero +'';
-  habilitarCampos(numero, value);
+  //habilitarCampos(numero, value);
   if(x.length>2)
     logica(numero,value);
   else{
@@ -366,68 +235,74 @@ function habilitarCampos(i, v)
   habilitarSemis(i,v);
   habilitarFinal(i,v);
 }
-function cargarInputs(){
-    $("input").each(function(index, val) {
+
+function analizarInputs(){
+        /*$("input").each(function(index, val) {
      var fd1 = $(this).attr("id");
-    var value1 = localStorage.getItem(fd1);
+     var resp = getItem(fd1);
+     var entero = parseInt(resp);
     if($(this).hasClass("grupos_i")){
-        if(value1 !== "" && value1 !== null) $(this).prop('disabled', true);
-         else $(this).prop('disabled', false);
-      }else $(this).prop('disabled', true);
-  });
+        if(entero !== -1) 
+            $(this).prop('disabled', true);
+        else 
+            $(this).prop('disabled', false);
+    }
+    else $(this).prop('disabled', true);
+    
+  });*/
   $("input.grupos_i").each(function(index, val) {
       var fd1 = $(this).attr("id");
-      var value1 = localStorage.getItem(fd1);     
-       if (value1) {
-            $('#'+fd1).val(value1);
-            analizarDatos(fd1,value1);
-        }
+      var value = getItem(fd1);
+      analizarDatos(fd1,value);
     });
-    $("input.octavos").each(function(index, val) {
+    /*$("input.octavos").each(function(index, val) {
       var fd1 = $(this).attr("id");
-      var value1 = localStorage.getItem(fd1);      
-       if (value1) {
-            $('#'+fd1).val(value1);
-            analizarDatos(fd1,value1);
-        }
+      var value = getItem(fd1); 
+      var entero = parseInt(value);
+      if (entero !== -1) {
+            $('#'+fd1).val(entero);
+            analizarDatos(fd1,value);
+        } 
     });
     $("input.cuartos").each(function(index, val) {
       var fd1 = $(this).attr("id");
-      var value1 = localStorage.getItem(fd1);
-       if (value1) {
-            $('#'+fd1).val(value1);
-            analizarDatos(fd1,value1);
+      var value = getItem(fd1); 
+      var entero = parseInt(value);
+      if (entero !== -1) {
+            $('#'+fd1).val(entero);
+            analizarDatos(fd1,value);
         }
     });
     $("input.semis").each(function(index, val) {
       var fd1 = $(this).attr("id");
-      var value1 = localStorage.getItem(fd1);
-       if (value1) {
-            $('#'+fd1).val(value1);
-            analizarDatos(fd1,value1);
+      var value = getItem(fd1); 
+      var entero = parseInt(value);
+      if (entero !== -1) {
+            $('#'+fd1).val(entero);
+            analizarDatos(fd1,value);
         }
     });
     $("input.final").each(function(index, val) {
       var fd1 = $(this).attr("id");
-      var value1 = localStorage.getItem(fd1);
-       if (value1) {
-            $('#'+fd1).val(value1);
-            analizarDatos(fd1,value1);
+      var value = getItem(fd1); 
+      var entero = parseInt(value);
+      if (entero !== -1) {
+            $('#'+fd1).val(entero);
+            analizarDatos(fd1,value);
         }
-    });
-
-    
-   
+    });*/
+}
+function cargarInputs(){
     $("input").change(function(index, element)
     {
         
         var value = $(this).val();
         var fd = $(this).attr("id");
         var value_string = ''+value;
-        if(isNaN(value) || value_string.indexOf(' ') !== -1){
+        if(isNaN(value) || value == -1 || value_string.indexOf(' ') !== -1){
           alert("Ingrese un Numero entero y sin espacios");
           $('#'+fd).val("");
-          localStorage.setItem(fd,"");
+          setItem(fd,-1);
           $(this).prop('disabled', false);
         }else{      
           
@@ -436,10 +311,10 @@ function cargarInputs(){
             else $(this).prop('disabled', false);
           }
           else{
-            localStorage.setItem(fd, "");
-            analizarDatos(fd,"");
+            setItem(fd,-1);
+            analizarDatos(fd,-1);
           }
-          localStorage.setItem(fd, value);
+          setItem(fd,value);
           analizarDatos(fd,value);
         }
     });   
@@ -628,7 +503,8 @@ function todosLlenos(n_grupo){
 }
 
 function noEsVacio(id){
-  return (localStorage.getItem(id)!== "" && localStorage.getItem(id)!== null ) ;
+    var item = parseInt(getItem(id));
+  return (item !== -1) ;
 }
 
 function description(){
@@ -699,7 +575,7 @@ function logica(id,value)
     var id_table = x.charAt(1);
     if(value_vs_left !== "" && value_vs_left !== null && value_vs_right !== "" && value_vs_right !== null)
     {
-      //alert(label_left+': '+value_vs_left + '  ' +label_right+': '+value_vs_right);
+      //console.log(label_left+': '+value_vs_left + '  ' +label_right+': '+value_vs_right);
       var label1;
       var label2;
       if(label_left.indexOf(' ') !== -1)
@@ -754,7 +630,7 @@ function modificarTabla(id_table,label_left,value_vs_left,label_right,value_vs_r
   if(value_vs_left > value_vs_right)
   {
     array_left = [1,1,0,0,value_vs_left,value_vs_right,3];
-    array_right = [1,0,0,1,value_vs_right,value_vs_left,0];
+    array_right = [1,0,0,1,value_vs_right,value_vs_left,0]; 
   }
   else
   {
@@ -770,10 +646,10 @@ function modificarTabla(id_table,label_left,value_vs_left,label_right,value_vs_r
   }
 
   $("#"+label_left).children("td").each(function (index) {
-
     if(index !== 0 && index !== 1)
     {
       var element1 = $(this);
+      
       var numero1 = parseInt(element1.text()) + parseInt(array_left[index-2]);
       element1.text(numero1);
     }
@@ -1016,7 +892,7 @@ function guardarDatosP(id, p1, p2, Partido)
   if(id === "Final2")    { au1 = "Semi3";     au2 = "Semi4";     }
 
   var aux;
-  if(localStorage.getItem(p1)>=localStorage.getItem(p2)) aux = au1;
+  if(getItem(p1)>=getItem(p2)) aux = au1;
   else aux = au2; 
   
   localStorage.setItem(id, localStorage.getItem(aux));
@@ -1062,8 +938,7 @@ function logicaPlayoff(numero, value)
         }
         else
         {
-            borrarPlay(numero);
-            console.log("entro");         
+            borrarPlay(numero);      
         }             
     }
     else
@@ -1108,4 +983,271 @@ function borrarPlay(i)
     if(i === 27 || i === 28)  {  localStorage.setItem("Final2", ""); rec(30); borrarPlay(30); }
 }
 
+/*
+* Para cada Grupo podemos hacer focus al clickear en el respectivo boton.
+* Se utiliza scrollTop y se calcula el offset para posicionarse en el grupo correcto.
+*
+*/
+function botonesFocus(){
+  var ids = ["grupoA","grupoB","grupoC","grupoD","grupoE","grupoF","grupoG","grupoH","PlayOff"];
+  $(".grupo").each(function(index, val) {
+      $(this).click(function(event) {
+      	 var element = $("#"+ids[index]).find(".group-title");
+         expandir(element);
+         $(window).scrollTop($("#"+ids[index]).offset().top);
+         
+      });
+    });
+}
+
+/*
+* 
+*/
+function randomValues(){
+
+	$("#cargar_aleatorio").click(function(event) {
+		cargarInputsAleatorio();
+	});
+}
+
+
+/*
+* Para cada input se genera un valor aleatorio entre 0-7
+* Se almacena el valor en localstorage.
+* Se analiza el dato ingresado.
+*/
+function cargarInputsAleatorio(){
+	deleteValues();
+    $("input.grupos_i").each(function(index, val) {
+    	var number;
+        var fd1 = $(this).attr("id");
+
+     	number = Math.floor(Math.random() * 9);
+     	$('#'+fd1).val(number);
+      	localStorage.setItem(fd1, number);
+      	analizarDatos(fd1,number);
+    });
+    $("input.octavos").each(function(index, val) {
+      var number;
+        var fd1 = $(this).attr("id");
+
+     	number = Math.floor(Math.random() * 7);
+     	$('#'+fd1).val(number);
+      	localStorage.setItem(fd1, number);
+      	analizarDatos(fd1,number);
+    });
+    $("input.cuartos").each(function(index, val) {
+      var number;
+        var fd1 = $(this).attr("id");
+
+     	number = Math.floor(Math.random() * 7);
+     	$('#'+fd1).val(number);
+      	localStorage.setItem(fd1, number);
+      	analizarDatos(fd1,number);
+    });
+    $("input.semis").each(function(index, val) {
+      var number;
+        var fd1 = $(this).attr("id");
+
+     	number = Math.floor(Math.random() * 7);
+     	$('#'+fd1).val(number);
+      	localStorage.setItem(fd1, number);
+      	analizarDatos(fd1,number);        
+    });
+    $("input.final").each(function(index, val) {
+        var number;
+        var fd1 = $(this).attr("id");
+
+     	number = Math.floor(Math.random() * 7);
+     	$('#'+fd1).val(number);
+      	localStorage.setItem(fd1, number);
+      	analizarDatos(fd1,number);
+        
+    }); 
+
+     $("input").each(function(index, val) {  
+      if($(this).hasClass("grupos_i"))
+          $(this).prop('disabled', true);
+     });
+
+}
+
+/*
+*
+*/
+function deleteAllValues(){
+
+	$("#delete_fields").click(function(event) {
+		deleteValues();
+	});
+}
+
+/*
+* Simplemente se borran todos los valores y se resetea el localstorage.
+* Se analizan los datos para inhabilitar campos.
+*/
+function deleteValues () {
+	var number;
+	$("input").each(function(index, val)
+     {
+     	var fd1 = $(this).attr("id");
+
+     	$('#'+fd1).val("");
+      	localStorage.setItem(fd1, "");
+      	analizarDatos(fd1,"");        
+    });  
+  	resetearTablas();
+  	resetearPlayoff();
+
+    
+    $("input").each(function(index, val) {
+        if($(this).hasClass("grupos_i"))
+          $(this).prop('disabled', false);
+     });
+
+}
+
+/*
+* Se expanden (slideDown) todos los grupos.
+*/
+function expandirGrupos(){
+	$("#expandir_groups").click(function(event) {
+		$('.group-title').each(function(index, val){
+       		var element = $(this);
+      		 expandir(element);
+    	});		
+	});
+}
+
+/*
+*
+*/
+function expandir(element){
+	if(element.hasClass('fa-chevron-down')){
+	    element.removeClass('fa-chevron-down');
+	    element.addClass('fa-chevron-up');
+	    element.parent().parent().siblings().slideDown("slow");
+     }
+}
+
+/*
+* Se contraen (slideUp) todos los grupos.
+*/
+function contraerGrupos(){
+	$("#contraer_groups").click(function(event) {
+		$('.group-title').each(function(index, val){
+	       var element = $(this);
+			contraer(element);
+		});
+	});
+}
+
+/*
+*
+*/
+function contraer(element){
+  if(element.hasClass('fa-chevron-up')){
+    element.removeClass('fa-chevron-up');
+    element.addClass('fa-chevron-down');
+    element.parent().parent().siblings().slideUp("slow");
+  }
+}
+
+/*
+* Cada valor de cada tabla es seteado a 0.
+*/
+function resetearTablas(){
+	for(var i=0;i<8;i++){
+		$("#table"+i+" tbody tr").children('td').each(function(index){
+			if(index !== 0 && index !== 1 && index !== 9 && index !== 10 &&
+				index !== 18 && index !== 19 && index !== 27 && index !== 28)
+		    {
+			    var element = $(this);
+			    element.text(0);		      
+		    }
+		});
+	}
+}
+
+/*
+* Funcion que muestra la caja de dialogo con los datos de los autores.
+*/
+function contact()
+{
+	$(function() {
+		$("#dialogo").dialog({ resizable: false });	
+	});
+}
+
+function resetearPlayoff()
+{
+  for(var i=1;i<=30;i++)
+  {
+    var element = $("#Partido"+i);
+    element.text("Equipo ?");
+    
+    var image = $("#Imagen"+i);
+    image.attr("src", "images/flags/fx.png");
+    
+  }
+
+  for(var j = 1; j<=8; j++)
+  {
+    localStorage.setItem("Octavos1"+j, "");
+    localStorage.setItem("Octavos2"+j, "");
+    localStorage.setItem("Cuartos1"+j, "");
+  }
+
+ for(var x = 1; x<=4; x++)
+ {
+    localStorage.setItem("Semi"+x, "");
+ }
+
+  localStorage.setItem("Final1", "");
+  localStorage.setItem("Final2", "");
+}
+/*function getItem(id_gol){
+    var value;
+    var errorHandling = function( req, status, err ) {
+                            console.log( 'Something went wrong', status, err );
+                        };
+    var id_input = 'p_'+id_gol;
+    $.ajax({
+            async: false,
+            url: './auxiliares/item_gol.php',
+            type: 'POST',
+            data: { 
+                Case:'get',
+                id_gol:id_input
+            },
+            success:function (resp){
+                   value = resp;
+            },
+            error: errorHandling
+    });
+    return value;
+}*/
+
+function getItem(id_gol){
+    return $('#'+id_gol).val();
+}
+
+function setItem(id_gol,input_value){
+    //var id_input = id_gol.substring(0, id_gol.indexOf('_'));
+      
+    var errorHandling = function( req, status, err ) {
+                            console.log( 'Something went wrong', status, err );
+                        };
+    var id_input = 'p_'+id_gol;
+    $.ajax({
+            url: './auxiliares/item_gol.php',
+            type: 'POST',
+            data: { 
+                Case:'set',
+                id_gol:id_input,
+                value:input_value
+            },
+            error: errorHandling
+    });
+}
 

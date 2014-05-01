@@ -424,3 +424,15 @@ p{
 		margin-left: 5%;
 	margin-right: 5%;
 }
+
+/* Proyecto 2*/
+a.userData{
+    font-size: 21px;
+    color: #0984FF;
+    text-decoration: none;
+}
+a.userData:hover{
+    font-size: 21px;
+    color: #fff;
+    text-decoration: none;
+}

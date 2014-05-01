@@ -411,3 +411,8 @@ p{
 		margin-left: 5%;
 	margin-right: 5%;
 }
+
+/* Proyecto 2*/
+a.userData {
+    float:right;
+}
