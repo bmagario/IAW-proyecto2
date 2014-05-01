@@ -5378,3 +5378,195 @@
 [30-Apr-2014 18:39:26 America/Buenos_Aires] PHP Notice:  Undefined variable: string in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 82
 [01-May-2014 10:09:53 America/Buenos_Aires] PHP Notice:  Undefined index: userid in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 4
 [01-May-2014 10:09:53 America/Buenos_Aires] PHP Notice:  Undefined index: id_pronostico in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 5
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:57 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 189
+[01-May-2014 16:22:58 America/Buenos_Aires] PHP Warning:  array_push() expects parameter 1 to be array, null given in C:\xampp\htdocs\IAW-proyecto2\vistas\principal.phtml on line 192
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 85
+[01-May-2014 16:39:23 America/Buenos_Aires] PHP Notice:  Undefined variable: game2 in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 87

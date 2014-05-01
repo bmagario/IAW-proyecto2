@@ -18,8 +18,6 @@ function deleteGoles(){
 function buildGroups(){
     $my_array = [];
     if(!isset($_SESSION['grupos'])){
-        $cant = 0;
-        $cant2 = 0;
         $my_array = [];
         $my_array_grupo = [];
         $grupos = DB::getInstance()->getGrupos();
@@ -78,6 +76,7 @@ function buildGroups(){
   $participantes_actuales = $_SESSION['participantes'];
   
   echo '<div class="container my-container">';
+           
   for($i=0;$i<count($grupos_actuales);$i++){
     $id_grupo = $ids[$i];
     echo '<div class="row widget" id="grupo'.$id_grupo.'">'.
@@ -117,10 +116,10 @@ function buildGroups(){
         $right = $partidos[$j]['team_right'];
         $number = $partidos[$j]['id_partido'];
 
-        $flag_l;
-        $flag_r;
-        $flag = $participantes_actuales[$j]['flag'];
-        $left_right;
+        $flag_l = '';
+        $flag_r = '';
+        //$flag = $participantes_actuales[$j]['flag'];
+        $left_right = '';
         for($p=0;$p<32;$p++){
           $left_right = $participantes_actuales[$p]['name'];
           if($left === $left_right) {$flag_l = $participantes_actuales[$p]['flag'];}

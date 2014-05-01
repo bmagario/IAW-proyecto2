@@ -1,24 +1,16 @@
-var grupos_json;
-var playoffs_json;
-var participantes_json;
+
 
 $(document).ready(function(){
   load_DOCS();
 });
 
 
-function load_playoffs(){
-   playoffs_json = playoffs.playoff;
-}
-
 function load_DOCS(){
   buildGroups();
-  load_playoffs();
-  buildPlayoffs();
 }
 
 function buildGroups(){
-    analizarInputs();
+  analizarInputs();
   cargarInputs(); 
   sortTablePositions();
   slideToggleGroups();
@@ -30,117 +22,6 @@ function buildGroups(){
   deleteAllValues();
   expandirGrupos();
   contraerGrupos();
-}
-
-var divCuartos1, divCuartos2;
-var divOctavos1, divOctavos2;
-var divSemi1, divSemi2;
-var linksOctavos1, linksOctavos2; 
-var linksCuartos1, linksCuartos2;
-var linksSemi1, linksSemi2;
-var linksFinal;
-var divFinal;
-
-function buildPlayoffs()
-{
-  divOctavos1 = document.getElementById('octavos1');
-  linksOctavos1 = playoffs_json.octavos1;
-  generarCuadrado(divOctavos1, linksOctavos1);
-  divOctavos2 = document.getElementById('octavos2');
-  linksOctavos2 = playoffs_json.octavos2;
-  generarCuadrado(divOctavos2, linksOctavos2);
-  divCuartos1 = document.getElementById('cuartos1');
-  linksCuartos1 = playoffs_json.cuartos1;
-  generarCuadrado(divCuartos1, linksCuartos1);
-  divCuartos2 = document.getElementById('cuartos2');
-  linksCuartos2 = playoffs_json.cuartos2;
-  generarCuadrado(divCuartos2, linksCuartos2);
-  divSemi1 = document.getElementById('semi1');
-  linksSemi1 = playoffs_json.semi1;
-  generarCuadrado(divSemi1, linksSemi1);
-  divSemi2 = document.getElementById('semi2');
-  linksSemi2 = playoffs_json.semi2;
-  generarCuadrado(divSemi2, linksSemi2);   
-
-  divFinal = document.getElementById('final');
-  linksFinal = playoffs_json.final;
-  generarCuadrado(divFinal, linksFinal); 
-}
-
-
-function generarCuadrado(variable1, variable2)
-{
-    for (var i = 0; i < variable2.length; i++) 
-    {  
-      var cont = 0;
-      var datei  = variable2[i].date;
-      var placei = variable2[i].place;
-      var stringi="";
-
-      if((variable1 === divCuartos1 || variable1 === divCuartos2) && i === 0){cont = 1;}
-      else if((variable1 === divCuartos1 || variable1 === divCuartos2) && i === 1) {cont = 2;}
-      else if (variable1 === divSemi1 || variable1 === divSemi2) {cont = 3;}      
-
-      stringi += '<div class="estiloPartidoNo'+cont+'"></div>';
-
-      if(variable1 !== divFinal){stringi +='<div class="estiloPartido ancho-play">';}
-      else  {stringi+='<div class="estiloPartido2">';}
-
-      stringi +='<span class="fecha">'+datei+'<br>'+placei+'</span><br>';
-
-      if(variable1 === divFinal)
-      {
-        stringi +='<div class="row">';
-        stringi +='<div class="col-md-3"> <img class="imagen100" id="Imagen29" src="images/flags/fx.png"></div>';
-        stringi +='<div class="col-md-3"> <input id="29" class="form-control final" type="text" disabled></div>';
-        stringi +='<div class="col-md-3"> <input id="30" class="form-control final" type="text" disabled></div>';
-        stringi +='<div class="col-md-3"> <img class="imagen100" id="Imagen30" src="images/flags/fx.png"></div>';
-        stringi +='</div>';
-
-        stringi+='<br   class="brStyleClear">';
-        stringi+='<div  class="floatLeftDiv"> <span class="claseSpan"><strong> <div id="Partido29"> Equipo ? </div></strong></span></div>';
-        stringi+='<div  class="floatRightDiv"> <span class="claseSpan"><strong> <div id="Partido30"> Equipo ? </div></strong></span></div>';
-
-      }      
-
-      var numero;
-      var texto = "disabled";
-      var clase;
-      if(variable1 !== divFinal)
-      {          
-          if(variable1===divOctavos1)  { numero = 1; texto = "";clase = "octavos"; }
-          if(variable1===divOctavos2)  { numero = 9; texto = "";clase = "octavos"; }
-          if(variable1===divCuartos1){ numero = 17; clase = "cuartos";}
-          if(variable1===divCuartos2) {numero = 21;   clase = "cuartos";}       
-          if(variable1===divSemi1) {numero = 25;clase = "semis";}
-          if(variable1===divSemi2) {numero = 27;clase = "semis";}
-
-          var j = i+i+numero;
-          var h = j+1;          
-
-          stringi +='<br class="brStyleClear">'; 
-          stringi +='<div class="row">';
-          stringi +='<div class="col-md-6"><img class="imagen100" id="Imagen'+j+'" src="images/flags/fx.png"></div>';
-          stringi +='<div class="col-md-6"><img class="imagen100" id="Imagen'+h+'" src="images/flags/fx.png"></div>';
-          stringi +='</div>';  
-
-          stringi +='<br class="brStyleClear">';
-          stringi +='<div class="row">'; 
-          stringi +='<div class="col-md-6"><span class="claseSpan"><strong> <div id="Partido'+j+'"> Equipo ? </div> </strong></span></div>'; 
-          stringi +='<div class="col-md-6"><span class="claseSpan"><strong> <div id="Partido'+h+'"> Equipo ? </div> </strong></span></div>';
-          stringi +='</div>';            
-
-          stringi +='<br class="brStyleClear">'; 
-          stringi +='<div class="row">';  
-          stringi +='<div class="col-md-6"> <input id="'+j+'" class="form-control '+clase+'" type="text"'+texto+'></div>';
-          stringi +='<div class="col-md-6"> <input id="'+h+'" class="form-control '+clase+'" type="text"'+texto+'></div>';  
-          stringi +='</div>';
-      }
-
-      stringi +='</div>';   
-
-      variable1.innerHTML += stringi; 
-    }         
 }
 
 function sortTablePositions(){
@@ -213,13 +94,13 @@ function coatsZoom(){
     });
 }
 
-function analizarDatos(id, value)
+function analizarDatos(id, value,recarga)
 {
   var numero =  parseInt(id);
   var x = numero +'';
   //habilitarCampos(numero, value);
   if(x.length>2)
-    logica(numero,value);
+    logica(numero,value,recarga);
   else{
 
     logicaPlayoff(numero,value);       
@@ -237,23 +118,23 @@ function habilitarCampos(i, v)
 }
 
 function analizarInputs(){
-        /*$("input").each(function(index, val) {
+    $("input").each(function(index, val) {
      var fd1 = $(this).attr("id");
      var resp = getItem(fd1);
-     var entero = parseInt(resp);
+     //var entero = parseInt(resp);
     if($(this).hasClass("grupos_i")){
-        if(entero !== -1) 
+        if(resp !== "") 
             $(this).prop('disabled', true);
         else 
             $(this).prop('disabled', false);
     }
     else $(this).prop('disabled', true);
     
-  });*/
+  });
   $("input.grupos_i").each(function(index, val) {
       var fd1 = $(this).attr("id");
       var value = getItem(fd1);
-      analizarDatos(fd1,value);
+      analizarDatos(fd1,value,false);
     });
     /*$("input.octavos").each(function(index, val) {
       var fd1 = $(this).attr("id");
@@ -312,14 +193,12 @@ function cargarInputs(){
           }
           else{
             setItem(fd,-1);
-            analizarDatos(fd,-1);
+            analizarDatos(fd,-1,true);
           }
           setItem(fd,value);
-          analizarDatos(fd,value);
+          analizarDatos(fd,value,true);
         }
     });   
-
-
 }
 
 
@@ -503,8 +382,8 @@ function todosLlenos(n_grupo){
 }
 
 function noEsVacio(id){
-    var item = parseInt(getItem(id));
-  return (item !== -1) ;
+  var item = getItem(id);
+  return (item !== '') ;
 }
 
 function description(){
@@ -539,7 +418,8 @@ function description(){
     }  
   });
 }
-function logica(id,value)
+
+function logica(id,value,recarga)
 {
   var no_vacios = false;
   var label_right;
@@ -559,7 +439,7 @@ function logica(id,value)
     }
   }else
   {
-    no_vacios = noEsVacio(id) && noEsVacio(id+1);
+    no_vacios = recarga && noEsVacio(id) && noEsVacio(id+1);
     if(no_vacios)
     {
       label_left = getRowTableLeft(id);
@@ -1004,10 +884,9 @@ function botonesFocus(){
 * 
 */
 function randomValues(){
-
-	$("#cargar_aleatorio").click(function(event) {
-		cargarInputsAleatorio();
-	});
+    $("#cargar_aleatorio").click(function(event) {
+            cargarInputsAleatorio();
+    });
 }
 
 
@@ -1017,17 +896,18 @@ function randomValues(){
 * Se analiza el dato ingresado.
 */
 function cargarInputsAleatorio(){
-	deleteValues();
+    deleteValues();
+    var json_goles =  cargarItemsAll();
     $("input.grupos_i").each(function(index, val) {
     	var number;
         var fd1 = $(this).attr("id");
-
-     	number = Math.floor(Math.random() * 9);
+        
+     	number = json_goles['p_'+fd1];
      	$('#'+fd1).val(number);
-      	localStorage.setItem(fd1, number);
-      	analizarDatos(fd1,number);
+      	
+      	analizarDatos(fd1,number,true);
     });
-    $("input.octavos").each(function(index, val) {
+    /*$("input.octavos").each(function(index, val) {
       var number;
         var fd1 = $(this).attr("id");
 
@@ -1063,7 +943,7 @@ function cargarInputsAleatorio(){
       	localStorage.setItem(fd1, number);
       	analizarDatos(fd1,number);
         
-    }); 
+    }); */
 
      $("input").each(function(index, val) {  
       if($(this).hasClass("grupos_i"))
@@ -1076,10 +956,9 @@ function cargarInputsAleatorio(){
 *
 */
 function deleteAllValues(){
-
-	$("#delete_fields").click(function(event) {
-		deleteValues();
-	});
+    $("#delete_fields").click(function(event) {
+            deleteValues();
+    });
 }
 
 /*
@@ -1087,14 +966,15 @@ function deleteAllValues(){
 * Se analizan los datos para inhabilitar campos.
 */
 function deleteValues () {
-	var number;
-	$("input").each(function(index, val)
+    setItemCleanAll();
+    var number;
+    $("input").each(function(index, val)
      {
      	var fd1 = $(this).attr("id");
 
      	$('#'+fd1).val("");
-      	localStorage.setItem(fd1, "");
-      	analizarDatos(fd1,"");        
+      	//localStorage.setItem(fd1, "");
+      	analizarDatos(fd1,"",true);        
     });  
   	resetearTablas();
   	resetearPlayoff();
@@ -1157,16 +1037,16 @@ function contraer(element){
 * Cada valor de cada tabla es seteado a 0.
 */
 function resetearTablas(){
-	for(var i=0;i<8;i++){
-		$("#table"+i+" tbody tr").children('td').each(function(index){
-			if(index !== 0 && index !== 1 && index !== 9 && index !== 10 &&
-				index !== 18 && index !== 19 && index !== 27 && index !== 28)
-		    {
-			    var element = $(this);
-			    element.text(0);		      
-		    }
-		});
-	}
+    for(var i=0;i<8;i++){
+        $("#table"+i+" tbody tr").children('td').each(function(index){
+                if(index !== 0 && index !== 1 && index !== 9 && index !== 10 &&
+                        index !== 18 && index !== 19 && index !== 27 && index !== 28)
+            {
+                    var element = $(this);
+                    element.text(0);		      
+            }
+        });
+    }
 }
 
 /*
@@ -1206,35 +1086,13 @@ function resetearPlayoff()
   localStorage.setItem("Final1", "");
   localStorage.setItem("Final2", "");
 }
-/*function getItem(id_gol){
-    var value;
-    var errorHandling = function( req, status, err ) {
-                            console.log( 'Something went wrong', status, err );
-                        };
-    var id_input = 'p_'+id_gol;
-    $.ajax({
-            async: false,
-            url: './auxiliares/item_gol.php',
-            type: 'POST',
-            data: { 
-                Case:'get',
-                id_gol:id_input
-            },
-            success:function (resp){
-                   value = resp;
-            },
-            error: errorHandling
-    });
-    return value;
-}*/
+
 
 function getItem(id_gol){
     return $('#'+id_gol).val();
 }
 
-function setItem(id_gol,input_value){
-    //var id_input = id_gol.substring(0, id_gol.indexOf('_'));
-      
+function setItem(id_gol,input_value){    
     var errorHandling = function( req, status, err ) {
                             console.log( 'Something went wrong', status, err );
                         };
@@ -1251,3 +1109,39 @@ function setItem(id_gol,input_value){
     });
 }
 
+function setItemCleanAll(){
+    var errorHandling = function( req, status, err ) {
+                            console.log( 'Something went wrong', status, err );
+                        };
+    $.ajax({
+            url: './auxiliares/item_gol.php',
+            type: 'POST',
+            data: { 
+                Case:'cleanAll'
+            },
+            error: errorHandling
+    });
+}
+
+//new
+function cargarItemsAll(){
+    var errorHandling = function( req, status, err ) {
+                            console.log( 'Something went wrong', status, err );
+                        };
+                        
+    var value;                       
+    $.ajax({
+            async: false,
+            url: './auxiliares/item_gol.php',
+            type: 'POST',
+            data: {
+                Case:'cargarAll'
+            },
+            dataType: 'json',
+            success: function(resp) {
+                 value =resp;
+            },
+            error: errorHandling
+    });
+    return value;
+}

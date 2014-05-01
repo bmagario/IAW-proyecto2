@@ -73,10 +73,11 @@ class DB {
                                            "id_pronostico" => $user_pronostico]]);
     }
     function setItemGol($user_id,$user_pronostico,$input_gol,$input_value){
-        $this->database->update("goles", 
-            [
+        $array = [
                 $input_gol => $input_value,
-            ],
+                ];
+        $this->database->update("goles", 
+            $array,
             ["AND" =>[
                 "id_user" => $user_id,
                 "id_pronostico" => $user_pronostico,
@@ -92,6 +93,17 @@ class DB {
             ]);
         
         $this->database->insert("goles",["id_user"=>$user_id,"id_pronostico"=>$user_pronostico]);
+    }
+    
+    //new
+    function setAllItems($user_id,$user_pronostico,$values){
+        $this->database->update("goles", 
+            $values,
+            ["AND" =>[
+                "id_user" => $user_id,
+                "id_pronostico" => $user_pronostico,
+                ]
+            ]);
     }
 }
 
