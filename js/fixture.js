@@ -22,6 +22,7 @@ function buildGroups(){
   deleteAllValues();
   expandirGrupos();
   contraerGrupos();
+  nuevoPronostico();
 }
 
 function sortTablePositions(){
@@ -967,14 +968,15 @@ function deleteAllValues(){
 */
 function deleteValues () {
     setItemCleanAll();
-    var number;
+    deletePepe();
+
+}
+function deletePepe(){
     $("input").each(function(index, val)
      {
      	var fd1 = $(this).attr("id");
-
      	$('#'+fd1).val("");
-      	//localStorage.setItem(fd1, "");
-      	analizarDatos(fd1,"",true);        
+       
     });  
   	resetearTablas();
   	resetearPlayoff();
@@ -984,9 +986,7 @@ function deleteValues () {
         if($(this).hasClass("grupos_i"))
           $(this).prop('disabled', false);
      });
-
 }
-
 /*
 * Se expanden (slideDown) todos los grupos.
 */
@@ -1049,15 +1049,7 @@ function resetearTablas(){
     }
 }
 
-/*
-* Funcion que muestra la caja de dialogo con los datos de los autores.
-*/
-function contact()
-{
-	$(function() {
-		$("#dialogo").dialog({ resizable: false });	
-	});
-}
+
 
 function resetearPlayoff()
 {
@@ -1092,12 +1084,15 @@ function getItem(id_gol){
     return $('#'+id_gol).val();
 }
 
-function setItem(id_gol,input_value){    
+function setItem(id_gol,input_value){ 
+    
     var errorHandling = function( req, status, err ) {
                             console.log( 'Something went wrong', status, err );
                         };
     var id_input = 'p_'+id_gol;
+    var value;
     $.ajax({
+         async: false,
             url: './auxiliares/item_gol.php',
             type: 'POST',
             data: { 
@@ -1105,8 +1100,12 @@ function setItem(id_gol,input_value){
                 id_gol:id_input,
                 value:input_value
             },
+            success: function(resp) {
+                 value =resp;
+            },
             error: errorHandling
     });
+    console.log(value[0]);
 }
 
 function setItemCleanAll(){
@@ -1121,6 +1120,7 @@ function setItemCleanAll(){
             },
             error: errorHandling
     });
+    
 }
 
 //new
@@ -1144,4 +1144,14 @@ function cargarItemsAll(){
             error: errorHandling
     });
     return value;
+}
+
+function nuevoPronostico(){
+    $("#nuevo_pronostico").click(function(event) {
+        generarPronosticoEnBlanco();
+    });
+}
+
+function generarPronosticoEnBlanco(){
+    deletePepe();
 }

@@ -18,4 +18,12 @@ function navbarTwitter()
 	});	
 }
 
-
+/*
+* Funcion que muestra la caja de dialogo con los datos de los autores.
+*/
+function contact()
+{
+	$(function() {
+		$("#dialogo").dialog({ resizable: false });	
+	});
+}

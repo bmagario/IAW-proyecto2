@@ -1,8 +1,3 @@
-<?php 
-if(!isset($_SESSION['goles'])){
-    getGoles(); 
-}
-?>
 <!doctype html>
 
 <html lang="en">
@@ -67,51 +62,10 @@ if(!isset($_SESSION['goles'])){
   </nav>
 
   <!--Seccion de Grupos-->
-  <div class="container botones">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-1 col-botones">
-          <div class="btn-group">
-          <button type="button" class="btn btn-link boton-oscuro">Grupos</button>
-          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-          <span class="caret"></span>
-          <span class="sr-only">Desplegar menú</span>
-          </button>
-
-          <ul class="dropdown-menu" role="menu">        
-          <li><div class="grupo btn">Grupo A</div></li>
-          <li><div class="grupo btn">Grupo B</div></li>
-          <li><div class="grupo btn">Grupo C</div></li>
-          <li><div class="grupo btn">Grupo D</div></li>
-          <li><div class="grupo btn">Grupo E</div></li>
-          <li><div class="grupo btn">Grupo F</div></li>
-          <li><div class="grupo btn">Grupo G</div></li>
-          <li><div class="grupo btn">Grupo H</div></li>
-          </ul>
-          </div>
-
-          <div class="btn btn-link grupo boton-oscuro">PlayOffs</div>
-
-          <div class="btn-group">
-          <button type="button" class="btn btn-link boton-oscuro">Acciones</button>
-          <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-          <span class="caret"></span>
-          <span class="sr-only">Desplegar menú</span>
-          </button>
-
-          <ul class="dropdown-menu" role="menu">
-          <li><div id="cargar_aleatorio" class="btn">Cargar Datos</div></li>
-          <li><div id="delete_fields" class="btn">Borrar Campos</div></li>
-          <li><div id="expandir_groups" class="btn">Expandir Grupos</div></li>
-          <li><div id="contraer_groups" class="btn">Contraer Grupos</div></li>
-          </ul>   
-          </div> 
-          <?php if(!isset($_SESSION['id_pronostico'])) $_SESSION['id_pronostico'] = 1; ?>
-          <?php if(!isset($_SESSION['userid'])) $_SESSION['userid'] = 1; ?>
-      </div>
-        <div class="col-md-2 pull-right">
-            <div class="btn btn-link">
+  <div class="botones">
+    <div class="row ">
+        <div class="col-md-3 pull-right">
                 <?php printUserData(); ?>
-            </div>
         </div>
     </div>
   </div>
@@ -121,62 +75,11 @@ if(!isset($_SESSION['goles'])){
   </div>
 
   <div id="main">
-      
-      <?php buildGroups(); ?>
-      
-  </div>
-  <article id="PlayOff">
-    <div class="container my-container-playoff">    
-
-      <!--Primer panel playoff-->
-      <div class="row widget">
-        <div class="col-md-12">
-
-            <div class="col-md-2"> 
-                <span class="grupom"> Octavos </span>
-                <br><div id="octavos1"></div>
-            </div>
-
-            <div class="col-md-2"> 
-                <span class="grupom"> Cuartos </span>
-                <br><div id="cuartos1"></div>
-            </div>
-
-            <div class="col-md-2"> 
-                <span class="grupom"> Semifinal </span>
-                <br><div id="semi1"></div>
-            </div>
-
-            <div class="col-md-2"> 
-                <span class="grupom"> Semifinal </span>
-                <br><div id="semi2"></div>
-            </div>
-
-            <div class="col-md-2"> 
-                <span class="grupom"> Cuartos </span>
-                <br><div id="cuartos2"></div>
-            </div>
-
-            <div class="col-md-2"> 
-                <span class="grupom"> Octavos </span>
-                <br><div id="octavos2"></div>
-            </div>
-        </div>    
+      <div class="container my-container">
+      Aqui va el contenido cuando no esta logueado.
       </div>
-      
-      <div class="row widget">
-            <div class="col-md-12">
-                <div class="col-md-4"><br><img id="copita1" src="images/copa.png" alt=""></div><br>
-                <div class="col-md-4">                                             
-                    <span class="grupom"> Final </span>
-                    <div id="final"></div>                              
-                </div>              
-                <div class="col-md-4"><img id="copita2" src="images/copa.png" alt=""></div><br>
-            </div>
-      </div> 
+  </div>
 
-    </div>
-  </article>
 
     <!--Seccion de Footer-->
 	<footer class="footer my-nav">

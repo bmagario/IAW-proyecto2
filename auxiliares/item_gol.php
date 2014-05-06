@@ -2,7 +2,7 @@
 
 session_start();
 include_once './medoodb.php';
-$user_id = $_SESSION['userid'];
+$user_id = $_SESSION['user']['userid'];
 $user_pronostico = $_SESSION['id_pronostico'];
 if(filter_input(INPUT_POST, 'Case') === "get"){
     $input_gol = filter_input(INPUT_POST, 'id_gol');

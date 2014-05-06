@@ -1,18 +1,13 @@
 <?php
 
 function getGoles(){
-    $user_id = $_SESSION['userid'];
-    $user_pronostico = $_SESSION['id_pronostico'];
+    $_SESSION['id_pronostico'] = 1;
+    $user_id = isset($_SESSION['user']['userid']) ? $_SESSION['user']['userid'] : -1;
+    $user_pronostico = isset($_SESSION['id_pronostico']) ? $_SESSION['id_pronostico'] : -1;//getIdPronostico();
+    echo "id: ".$user_id."</br>";
+    echo "pron: ".$user_pronostico."</br>";
     $info_goles = DB::getInstance()->getItemGoles($user_id,$user_pronostico);
-    $_SESSION['goles'] = $info_goles;
-          
-}
-
-function deleteGoles(){
-    $user_id = $_SESSION['userid'];
-    $user_pronostico = $_SESSION['id_pronostico'];
-    DB::getInstance()->setCleanItems($user_id,$user_pronostico);
-    unset($_SESSION['goles']);
+    $_SESSION['goles'] = $info_goles; 
 }
 
 function buildGroups(){
@@ -200,4 +195,12 @@ function buildGroups(){
               '</div>';//End row widget and section posiciones
   }
   echo '</div>';
+}
+
+function cargarPronosticosID(){
+    $user_id = isset($_SESSION['user']['userid']) ? $_SESSION['user']['userid'] : -1;
+    $valor = DB::getInstance()->cargarPronosticosIDBD($user_id);
+    for($i=1;$i<=$valor;$i++){
+        echo '<li><div id="prono_'.$i.'" class="btn">Pronostico nº '.$i.'</div></li>';
+    }
 }
