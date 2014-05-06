@@ -2,6 +2,7 @@
 
 session_start();
 include_once './medoodb.php';
+//include_once './datos.php';
 $user_id = $_SESSION['user']['userid'];
 $user_pronostico = $_SESSION['id_pronostico'];
 if(filter_input(INPUT_POST, 'Case') === "get"){
@@ -37,18 +38,34 @@ else{
                        $array_goles[$game1] = mt_rand(0, 7);
                        $game2 = 'p_1' . $i . $j . '102';
                        $array_goles[$game2] = mt_rand(0, 7);
+                       $_SESSION['goles'][$game1] = $array_goles[$game1];
+                       $_SESSION['goles'][$game2] = $array_goles[$game2];
                     }
                 }
                 for($h=1;$h<=30;$h++){
                     $playoff = 'p_'.$h;
                     $array_goles[$playoff] = mt_rand(0, 7);
+                    $_SESSION['goles'][$playoff] = $array_goles[$playoff];
                 }
                 DB::getInstance()->setAllItems($user_id,$user_pronostico,$array_goles);
                 
-                echo json_encode($array_goles);
+                echo json_encode($_SESSION['goles']);
+            }
+           else
+            {
+                if(filter_input(INPUT_POST, 'Case') === "cargarProno")
+                {
+                    $user_pronostico = $_SESSION['id_pronostico'] = filter_input(INPUT_POST, 'id');
+                    unset($_SESSION['goles']);
+                    $info_goles = DB::getInstance()->getItemGoles($user_id,$user_pronostico);
+                    $_SESSION['goles'] = $info_goles; 
+                    echo json_encode($_SESSION['goles']);
+                }
             }
         }        
     }
+    
+        
 }
 
         

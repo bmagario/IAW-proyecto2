@@ -331,3 +331,135 @@ Stack trace:
 [06-May-2014 08:24:07 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
 [06-May-2014 08:24:08 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
 [06-May-2014 08:24:12 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 08:37:38 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:08:56 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:10:02 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:11:05 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:11:19 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:11:25 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:11:27 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:11:36 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:11:37 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:11:40 America/Buenos_Aires] PHP Warning:  Missing argument 1 for DB::getLastPronoDB(), called in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 208 and defined in C:\xampp\htdocs\IAW-proyecto2\auxiliares\medoodb.php on line 115
+[06-May-2014 09:11:40 America/Buenos_Aires] PHP Notice:  Undefined variable: user_id in C:\xampp\htdocs\IAW-proyecto2\auxiliares\medoodb.php on line 117
+[06-May-2014 09:11:40 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:12:19 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:12:28 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:12:29 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:12:35 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:12:36 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:12:39 America/Buenos_Aires] PHP Warning:  Missing argument 1 for DB::getLastPronoDB(), called in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 208 and defined in C:\xampp\htdocs\IAW-proyecto2\auxiliares\medoodb.php on line 115
+[06-May-2014 09:12:39 America/Buenos_Aires] PHP Notice:  Undefined variable: user_id in C:\xampp\htdocs\IAW-proyecto2\auxiliares\medoodb.php on line 117
+[06-May-2014 09:12:39 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:13:11 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:13:13 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:13:19 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:13:20 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:13:24 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:13:50 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:15:16 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:17:00 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:17:02 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:17:08 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:17:10 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:17:13 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:18:23 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:19:45 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:23:16 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:24:03 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:25:42 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:26:48 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:27:48 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:28:08 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:28:45 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:29:36 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:31:14 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:31:15 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:31:36 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:31:38 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:31:40 America/Buenos_Aires] PHP Fatal error:  Call to undefined function getLastProno() in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 6
+[06-May-2014 09:32:10 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:34:33 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:35:38 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:36:31 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:39:02 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:39:19 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:40:26 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:41:21 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:42:09 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:43:19 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:43:36 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:44:17 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:44:51 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:45:36 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:46:05 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:46:28 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:46:39 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:46:41 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:46:48 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:46:49 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:46:52 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:47:44 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:47:46 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:47:55 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:47:56 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:47:59 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:48:57 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:48:58 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:49:05 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:49:06 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:49:08 America/Buenos_Aires] PHP Fatal error:  Call to undefined function getLastProno() in C:\xampp\htdocs\IAW-proyecto2\auxiliares\datos.php on line 5
+[06-May-2014 09:49:50 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:49:50 America/Buenos_Aires] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\IAW-proyecto2\vistas\fixture.phtml:113) in C:\xampp\htdocs\IAW-proyecto2\auxiliares\google.php on line 30
+[06-May-2014 09:49:51 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:50:49 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 09:50:50 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:50:56 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:50:57 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:51:01 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:55:34 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 09:56:12 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:00:01 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 10:00:02 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:02:31 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:02:33 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:02:37 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:04:05 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:04:55 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 10:04:56 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:06:10 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:06:11 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:06:14 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:10:49 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:11:50 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:13:03 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:14:00 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:14:19 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:14:46 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:15:38 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:17:18 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:18:24 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:19:18 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:20:07 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:21:49 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:29:32 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:29:57 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:31:48 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:33:58 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:35:02 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:35:22 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 10:35:23 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:35:38 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:35:39 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:35:43 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:37:05 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:39:13 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:39:52 America/Buenos_Aires] PHP Notice:  A session had already been started - ignoring session_start() in C:\xampp\htdocs\IAW-proyecto2\index.php on line 23
+[06-May-2014 10:39:54 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:41:21 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:41:23 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:41:26 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:41:51 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:42:14 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:42:47 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.
+[06-May-2014 10:49:48 America/Buenos_Aires] SSL certificate problem, verify that the CA cert is OK. Retrying with the CA cert bundle from google-api-php-client.

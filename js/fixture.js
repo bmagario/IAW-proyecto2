@@ -23,6 +23,7 @@ function buildGroups(){
   expandirGrupos();
   contraerGrupos();
   nuevoPronostico();
+  cargarPronostico();
 }
 
 function sortTablePositions(){
@@ -1092,7 +1093,7 @@ function setItem(id_gol,input_value){
     var id_input = 'p_'+id_gol;
     var value;
     $.ajax({
-         async: false,
+            async: false,
             url: './auxiliares/item_gol.php',
             type: 'POST',
             data: { 
@@ -1154,4 +1155,55 @@ function nuevoPronostico(){
 
 function generarPronosticoEnBlanco(){
     deletePepe();
+}
+
+function cargarPronostico(){
+    $('.getprono').click(function (){
+       var id = $(this).attr("id");
+       cargarTodosItems(id);
+    });
+    
+}
+
+function getProno(id){
+    var real_id = id.substring(6,id.lenght);
+    var errorHandling = function( req, status, err ) {
+                            console.log( 'Something went wrong', status, err );
+                        };
+                       
+    var value;                       
+    $.ajax({
+            async: false,
+            url: './auxiliares/item_gol.php',
+            type: 'POST',
+            data: {
+                Case:'cargarProno',
+                id:real_id
+            },
+            dataType: 'json',
+            success: function(resp) {
+                 value =resp;
+            },
+            error: errorHandling
+    });
+    return value;
+    
+}
+
+function cargarTodosItems(id){
+    deletePepe();
+    var json_goles =  getProno(id);
+    $("input.grupos_i").each(function(index, val) {
+    	var number;
+        var valor;
+        var fd1 = $(this).attr("id");
+        
+     	number = json_goles['p_'+fd1];
+        if(number === '-1')
+            valor = "";
+        else valor = number;
+     	$('#'+fd1).val(valor);
+      	
+      	analizarDatos(fd1,number,true);
+    });
 }

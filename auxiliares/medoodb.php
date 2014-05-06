@@ -108,8 +108,18 @@ class DB {
     }
     
     function cargarPronosticosIDBD($user_id){
-        return $valor = $this->database->count("goles",[
-	"id_user" =>$user_id]);
+        return $valor = $this->database->count("goles",
+                                    ["id_user" =>$user_id]);
+    }
+    
+    function getLastPronoDB($user_id){
+        return $this->database->max("goles", "id_pronostico",
+                                    ["id_user" =>$user_id]);
+    }
+    
+    
+    function getPlayoff() {
+        return $this->database->select("playoffs", "*");
     }
 }
 
